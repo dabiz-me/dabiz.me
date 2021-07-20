@@ -1,0 +1,27 @@
+- title: Java
+  desc: Es el lenguaje de programación en el que más cómodo me encuentro. He trabajado en java y su ecosistema durante los últimos 18 años.
+  progress: 90%
+
+- title: Diseño de software
+  desc: Patrones Gof, principios SOLID, código limpio y en general buenas prácticas de diseño de software son conceptos con los que me siento cómodo y trato de aplicar en mi día a día. Durante 8 años desempeñé el rol de analista orgánico, asumiendo y documentando todo tipo de decisiones de diseño.
+  progress: 90%
+
+- title: Spring
+  desc: A pesar de que trata de un framework realmente grande, he trabajado con sus principales proyectos spring boot, core, security, batch, spring data (mysql, mongo, elk).
+  progress: 80%
+
+- title: Bases de datos
+  desc: No me considero un experto en este ámbito, pero si he tendio un bagaje bastante amplio. Oracle y MySql han sido las principales bases de datos relacionales con las que he trabajado. También he tenido la oportunidad de utilizar algunas de las bases de datos NoSQL más importantes como mongo, redis, elasticsearch, neo4j o HBase.
+  progress: 75%
+
+- title: Metodología
+  desc: Las principales metodologías con las que he trabajado, tanto desde el ámbito de gestión como del de desarrollo han sido RUP y Scrum, sin perder de vista aspectos de calidad y trazabilidad mediante herramientas de apoyo como Jira, Confluence, Redmine, Rational Team Concert, Git, Bitbucket, Gitlab, etc. En general puedo enfrentarme con solvenccia a la gestión de equipos, toma de reguisitos, análisis funcional y diseño técnico detallado.
+  progress: 70%
+
+- title: Big Data
+  desc: Aunque carzco de experiencia profesional esspecífica en este ámbido, he cursado dos másters Big Data, que junto al conocimiento de bases de datos NoSQL, los entornos cloud y escalables en los que se trabaja actulamente y algo de experiencia en Spark y Kafka, creo que me adaptaría a este ecosistema rápidamente
+  progress: 70%
+
+- title: Arquitectura de software
+  desc: Sin ser uno de mis fuertes, puedo desenvolverme con solvencia en la descomposición de responsabilidades, identificación y diseño de componentes, o elección de soluciones de terceros.
+  progress: 65%

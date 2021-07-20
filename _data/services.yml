@@ -1,0 +1,11 @@
+- title: Desarrollo Backend
+  desc: Programación Java y Spring, en combinación con seguridad, colas de mensajería, bases de datos relacionales y NoSQL. Entornos distribuidos, web y Big Data.
+  icon: assets/images/services-icon-java.png
+
+- title: Arquitectura software y diseño de componentes
+  desc: Diseño integral de soluciones de software, diseño de soluciones ad-hoc, integración con sistemas de terceros.
+  icon: assets/images/design2_icon.png
+  
+- title: Consultoría
+  desc: Toma de requisitos, análisis funcional, diagramas de contexto, BPMN y UML, medición de software (IFPUG, NESMA Y SNAP), EDT (Work Breakdown structure).
+  icon: assets/images/project2-management.png

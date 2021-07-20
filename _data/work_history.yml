@@ -1,0 +1,280 @@
+- title: Desarrollador Sénior
+  year: Noviembre 2020 -
+  descripcion: En estrecha colaboración con el CTO, mi responsabilidad se centra en labores de arquitectura, diseño y desarrollo.
+  logo: /assets/images/loycus.png
+  sector:
+    - Bancario
+  area_funcional:
+    - Ventas (EIDAS, PSD2)
+  responsabilidades:
+    - Arquitectura
+    - Diseño técnico detallado
+    - Soporte al equipo de desarrollo
+    - Programación
+  metodologia:
+    - Scrum
+  ecosistema:
+    - Mac/os, linux
+    - Jira
+    - Confluence
+    - CI/CD Google Cloud
+    - Git/Bitbucket
+    - Sonar
+    - Maven
+    - Nexus
+  arquitectura:
+    - MSA
+  desarrollo:
+    - Java 11
+    - Spring Boot 2
+    - Spring 4 (security, data, batch, core)
+    - JWT
+    - Mysql
+    - Mongo
+    - Redis
+    - Resilience4j
+    - Elastic Stack
+    - Archunit
+    - Junit
+    - Mockito
+    - Tomcat
+    - GPub/sub
+    - Zipkin
+    - Docker
+    - Locust
+
+- title: Desarrollador Sénior
+  year: Junio 2020 - Noviembre 2020
+  descripcion: Breve colaboración en el desarrollo de Maggie, solución tecnológica para integrar las diferentes plataformas nacionales en una única arquitectura.
+  logo: /assets/images/babel.png
+  cliente: ING
+  sector: Bancario
+  area_funcional: Innovación
+  responsabilidades:
+    - Programación
+  metodologia:
+    - Scrum
+  ecosistema:
+    - Windows, Linux
+    - Jira
+    - Confluence
+    - Service now
+    - CI/CD Jenkkins
+    - Git/GitLab
+    - Sonar
+    - Maven
+    - Artifactory
+  arquitectura:
+    - SOA
+  desarrollo:
+    - Java 8
+    - Spring (core)
+    - Kafka
+    - Avro
+    - Confluent Schema Registry
+    - Junit
+    - Mockito
+
+- title: Desarrollador Sénior
+  year: Abril 2019 - Junio 2020
+  descripcion: De vuelta a labores más técnicas, colaboré en el desarrollo en la adopción del estándar NDC de IATA al legacy de Iberia
+  logo: /assets/images/slashmobility.png
+  cliente: Iberia
+  sector: Transporte
+  area_funcional: Ventas
+  responsabilidades:
+    - Diseño Técnico Detallado
+    - Programación
+  metodologia:
+    - Scrum
+    - Nexus Scaling Scrum
+  ecosistema:
+    - Windows, UNIX
+    - Jira
+    - Confluence
+    - Git, GitLab
+    - CI/CD Jenkkins
+    - Sonar
+    - Maven
+    - Nexus
+  arquitectura:
+    - SOA
+  desarrollo:
+    - Java 7
+    - Spring 4 (data, core)
+    - Oracle 11
+    - Redis
+    - EHCache
+    - Junit
+    - Mockito
+    - Tomcat
+    - Docker
+    - Elastic Stack
+
+- title: Coordinador Técnico de proyectos
+  year: Mayo 2017 - Diciembre 2018
+  descripcion: Segunda etapa en la IGAE, Oficina de Informática Presupuestaria, al frente de un equipo de 6 desarrolladores, dimos servicio al área de Gestión Patrimonial y Portafirmas Electrónico.
+  logo: /assets/images/axpe.png
+  cliente: Intervención General de la administración del Estado
+  sector: Administración pública
+  area_funcional: Contabilidad
+  responsabilidades:
+    - Gestión de la demanda
+    - Gestión de equipo
+    - Gestión de proyectos
+    - Análisis funcional
+    - Diseño técnico
+    - Programación
+  metodologia:
+    - Asistencia técnica.
+  ecosistema:
+    - Windows
+    - Redmine
+    - SVN - Tortoise
+    - Sonar
+    - Maven
+    - Artifactory
+    - Jenkins
+  arquitectura:
+    - MVC
+  desarrollo:
+    - Java 7
+    - Spring (core)
+    - Oracle 11
+    - Javascript
+    - Ajax
+    - JQuery
+    - HTML
+    - css
+    - jsp
+    - jstl
+    - Weblogic
+
+- title: Jefe de Proyecto
+  year: Mayo 2017 - Diciembre 2018
+  descripcion: Segunda etapa en la IGAE, Oficina de Informática Presupuestaria, al frente de un equipo de 6 desarrolladores, dimos servicio al área de Gestión Patrimonial y Portafirmas Electrónico.
+  logo: /assets/images/gesein.png
+  cliente: DTIC Ministerio de justicia
+  sector: Administración pública
+  area_funcional: Innovación
+  responsabilidades:
+    - Plan de Mejora del Servicio de Arquitectura
+    - Estudio y previsión de proyectos
+    - Toma de requisitos
+    - Estimación de proyectos (IFPUG, NESMA, SNAP)
+    - Gestión ciclo de vida proyectos
+    - Gestión equipo de arquitectura
+    - Elaboración de estudios de impacto
+    - Elaboración de plan de pruebas
+  metodologia:
+    - Scrum
+  ecosistema:
+    - Windows, UNIX
+    - SVN - Tortoise
+    - Confluence
+    - OAUTH
+    - Oracle Sevice Bus (OSB)
+    - Jira
+    - CI/CD Jenkkins
+    - Sonar
+    - Maven
+    - Artifactory
+    - TestLink
+  arquitectura:
+    - SOA
+  desarrollo:
+    - Java 7
+    - Spring (core)
+    - Oracle
+    - Javascript
+    - Ajax
+    - JQuery
+    - HTML
+    - css
+
+- title: Analista Orgánico
+  year: Diciembre 2007 - Octubre 2015
+  descripcion: Evolución personal y madurez profesional, resumen este periodo de colaboración en departamento POS/TPV del Grupo El Corte Inglés.
+  logo: /assets/images/atos.png
+  cliente: El Corte Inglés
+  sector: Comercio al por mayor y al por menor
+  area_funcional: Tecnologías de la información (TPV)
+  responsabilidades:
+    - Análisis funcional
+    - Diseño técnico detallado
+    - Gestión equipos
+    - Calidad de software
+    - Programación
+    - Gestión de incidencias
+  metodologia:
+    - RUP
+  ecosistema:
+    - Windows
+    - Rational Rose (UML)
+    - Doors
+    - IBM Jazz
+    - Microsoft Project
+    - ClearCase
+    - Rational Team Concert
+    - Maven
+    - Nexus
+    - Ant
+  arquitectura:
+    - MVC
+  desarrollo:
+    - Java 5
+    - J2SE
+    - Berkeley DB
+    - XML, XSL, DTD
+
+- title: Analista Programador
+  year: Junio 2005 - Diciembre 2007
+  descripcion: Primer cambio de aires, paso de desarrollos internos a servicios en cliente. Puesto dedicado a la programación, supuso la primera toma de contacto directa con el cliente.
+  logo: /assets/images/indra.png
+  cliente: Intervención General de la administración del Estado
+  sector: Administración pública
+  area_funcional: Contabilidad
+  responsabilidades:
+    - Programación
+  metodologia:
+    - Asistencia técnica.
+  ecosistema:
+    - Windows
+  arquitectura:
+    - MVC
+  desarrollo:
+    - J2EE
+    - JSTL
+    - Oracle 8
+    - HTML
+    - Javascript
+    - css
+
+- title: Analista Programador
+  year: Junio 2000 - Junio 2005
+  descripcion: Primera incursión en el mundo de las tecnologías de la información de la mano de Thales. Tras licenciarme en psicología, decido cambiar de aires y ser más práctico.
+  logo: /assets/images/thales.png
+  sector: Tecnologías de la información
+  area_funcional: Servicio al cliente
+  responsabilidades:
+    - Programación
+  metodologia:
+    - Asistencia técnica.
+  ecosistema:
+    - Windows / UNIX
+    - Rational Rose (UML)
+  Proyectos:
+    - First Data Iberica
+    - Seguridad Social
+    - AENA
+    - Movistar
+  desarrollo:
+    - J2EE
+    - JSTL
+    - Oracle 8
+    - HTML
+    - Javascript
+    - css
+    - C++
+    - CORBA
+    - XML, XSL, DTD

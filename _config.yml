@@ -1,0 +1,30 @@
+####################################################
+#
+# Welcome to Tfolio Jekyll Theme
+#
+# Product Link : https://themeix.com/product/tfolio-personal-portfolio-cv-resume-jekyll-theme/
+# Version : v2.0.1
+#
+####################################################
+
+title: David Pérez
+email: your-email@example.com
+description: "Developer"
+keywords: "jekyll, minimal jekyll, jekyll theme, responsive jekyll, seo friendly blog, super fast blog, responsive"
+url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+github_username:  DavidPerezRod
+blog: 'http://www.ratondbiblioteca.com'
+
+github_url: 'http://github.com/DavidPerezRod'
+linkedin_url: 'http://linkedin.com/in/dabizme'
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+  - jekyll-archives
+  - jekyll-seo-tag
+
+ 

@@ -1,0 +1,23 @@
+- title: Postgrado (15 ECTS)
+  year: 2015 - 2016
+  designation: Big Data Managements and Analytics (15 créditos ECTS)
+  desc: <p><li>Gestores NoSQL (MongoDB, HBase, HDFS, Neo4j)</li><li>Framework Hadoop</li><li>Spark streams</li><li>Data Analytics (R-Studio)</li><li>Modelos de datos semánticos</li></p>
+  logo: /assets/images/upc.png
+
+- title: Máster (60 ECTS)
+  year: 2014 -2015
+  designation: Data management e innovación tecnológica en Big Data (60 crédito ETCS)
+  desc: <p><li>Gestión de proyectos</li><li>Business Intelligence</li><li>Gestión de datos maestros</li><li>Ecosistema Hadoop</li></p>
+  logo: /assets/images/obs.png
+
+- title: Ingeniero Técnico
+  year: 2005 - 2012
+  designation: Ingeniería Técnica en informática de sistemas
+  desc:
+  logo: /assets/images/uned.png
+
+- title: Licenciado
+  year: 1994-1999
+  designation: Licenciado en psicología
+  desc:
+  logo: /assets/images/uam.png

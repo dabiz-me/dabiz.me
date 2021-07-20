@@ -1,0 +1,70 @@
+<div class="row">
+    {% for exp_data in site.data.work_history %}
+    <div class="col-md-6 col-sm-12 experienceRow">
+        <div class="experiences-info-wrapper wow fadeIn">
+            <div class="work-history-img">
+                {% if exp_data.logo != "" %}
+                    <img src="{{exp_data.logo}}" alt=""/>
+                {% endif %}
+            </div>
+            <div class="experiences-datetime">{{exp_data.year}}</div>
+            <h3>{{exp_data.title}}</h3>
+            <hr>
+            </br></hr>
+            <p>{{exp_data.descripcion}}</p>
+            <br>
+            <div class="experienceColumn">
+                {% if exp_data.cliente %}
+                    <u><h6>Cliente</h6></u>
+                    <ul><li>{{exp_data.cliente}}</li></ul>
+                {% endif %}
+
+                {% if exp_data.sector %}
+                <u><h6>Sector</h6></u>
+                <ul><li>{{exp_data.sector}}</li></ul>
+                {% endif %}
+
+                {% if exp_data.area_funcional %}
+                <u><h6>Área funcional</h6></u>
+                <ul><li>{{exp_data.area_funcional}}</li></ul>
+                {% endif %}
+
+
+                <u><h6>Responsabilidades</h6></u>
+                <ul>
+                    {% for responsabilidad in exp_data.responsabilidades %}
+                    <li>{{responsabilidad}}</li>
+                    {% endfor %}
+                </ul>
+                <u><h6>Metodología</h6></u>
+                <ul>
+                    {% for metodologia in exp_data.metodologia %}
+                    <li>{{metodologia}}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="experienceColumn">
+                <u><h6>Arquitectura</h6></u>
+                <ul>
+                    {% for arquitectura in exp_data.arquitectura %}
+                    <li>{{arquitectura}}</li>
+                    {% endfor %}
+                </ul>
+                <u><h6>Stack Tecnológico Desarrollo</h6></u>
+                <ul>
+                    {% for tecnologia in exp_data.desarrollo %}
+                    <li>{{tecnologia}}</li>
+                    {% endfor %}
+                </ul>
+                <u><h6>Stack Tecnológico Complementario</h6></u>
+                <ul>
+                    {% for ecosistema in exp_data.ecosistema %}
+                    <li>{{ecosistema}}</li>
+                    {% endfor %}
+                </ul>
+            </div>
+            <div class="experienceRow"></div>
+        </div>
+    </div>
+    {% endfor %}
+</div>
