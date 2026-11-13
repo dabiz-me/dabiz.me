@@ -1,37 +1,33 @@
     <!-- Start Header -->
     <header class="themeix-aside">
-        <!-- control bar -->
         <div class="control-bar">
             <div class="text-center">
               <span class="menu-toggle">
                <i class="chart"></i>
                <i class="chart"></i>
                <i class="chart"></i>
-               </span>
+              </span>
             </div>
         </div>
-        <!-- Start SlideMenu  -->
         <div class="themeix-slide-menu menu-open navbar-scrolled">
             <div class="themeix-fixed-nav">
-                <div class="themeix-nav-logo"><a href="{{site.url}}"><img src=" {{'/assets/images/logo.png' | relative_url}}" alt="fixedn nav logo"/></a></div>
+                <div class="themeix-nav-logo"><a href="{{ '/' | relative_url }}"><img src="{{ '/assets/images/logo.png' | relative_url }}" alt="Inicio"/></a></div>
                 <nav>
                     <ul class="themeix-nav-menu list-inline">
-                        <li><a href="#about" class="btn-animated js-scroll-trigger">acerca de mi<i class="icon-about"></i></a></li>
-                        <li><a href="#skills" class="btn-animated js-scroll-trigger">habilidades<i class="icon-skills"></i></a></li>
-                        <li><a href="#services" class="btn-animated js-scroll-trigger">servicios<i class="icon-services"></i></a></li>
-                        <li><a href="#experiences" class="btn-animated js-scroll-trigger">experiencia<i class="icon-experiences"></i></a></li>
-                        <li><a href="{{site.blog}}" class="btn-animated js-scroll-trigger" target="_blank">blog <i class="icon-blog"></i></a></li>
-                        <li><a href="#contact" class="btn-animated js-scroll-trigger">contacto<i class="icon-contact"></i></a></li>
+                        <li><a href="{{ '/#about' | relative_url }}" class="btn-animated">acerca de mí<i class="icon-about"></i></a></li>
+                        <li><a href="{{ '/#skills' | relative_url }}" class="btn-animated">especialidades<i class="icon-skills"></i></a></li>
+                        <li><a href="{{ '/#services' | relative_url }}" class="btn-animated">servicios<i class="icon-services"></i></a></li>
+                        <li><a href="{{ '/#portfolio' | relative_url }}" class="btn-animated">casos<i class="icon-portfolio"></i></a></li>
+                        <li><a href="{{ '/#experiences' | relative_url }}" class="btn-animated">experiencia<i class="icon-experiences"></i></a></li>
+                        <li><a href="{{ site.blog }}" class="btn-animated" target="_blank" rel="noopener noreferrer">blog<i class="icon-blog"></i></a></li>
+                        <li><a href="{{ '/#contact' | relative_url }}" class="btn-animated">contacto<i class="icon-contact"></i></a></li>
                     </ul>
                 </nav>
                 <div class="homepage-copyright">
-                <ul class="list-inline fixed-social-share">
-                    <li class="list-inline-item"><a href="{{site.linkedin_url}}"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
-                    <li class="list-inline-item"><a href="{{site.github_url}}"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-                </ul>
+                    <ul class="list-inline fixed-social-share">
+                        <li class="list-inline-item"><a href="{{ site.github_url }}" aria-label="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+                    </ul>
                 </div>
             </div>
         </div>
-     <!-- End SlideMenu ================-->
     </header>
-    <!-- End Header -->
