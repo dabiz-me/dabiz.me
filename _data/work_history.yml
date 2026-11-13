@@ -1,47 +1,24 @@
-- title: Desarrollador Sénior
-  year: Noviembre 2020 -
-  descripcion: En estrecha colaboración con el CTO, mi responsabilidad se centra en labores de arquitectura, diseño y desarrollo.
-  logo: /assets/images/loycus.png
-  sector:
-    - Bancario
-  area_funcional:
-    - Ventas (EIDAS, PSD2)
+- title: Arquitecto de software / Responsable técnico
+  empresa: Zertiban / Zertipayments
+  year: Noviembre 2020 – actualidad
+  descripcion: Evolución desde funciones de diseño y desarrollo hacia la definición de la arquitectura de software y la responsabilidad técnica de una plataforma empresarial de servicios digitales y financieros.
+  sector: Servicios digitales y financieros
   responsabilidades:
-    - Arquitectura
-    - Diseño técnico detallado
-    - Soporte al equipo de desarrollo
-    - Programación
-  metodologia:
-    - Scrum
-  ecosistema:
-    - Mac/os, linux
-    - Jira
-    - Confluence
-    - CI/CD Google Cloud
-    - Git/Bitbucket
-    - Sonar
-    - Maven
-    - Nexus
-  arquitectura:
-    - MSA
-  desarrollo:
-    - Java 11
-    - Spring Boot 2
-    - Spring 4 (security, data, batch, core)
-    - JWT
-    - Mysql
-    - Mongo
-    - Redis
-    - Resilience4j
-    - Elastic Stack
-    - Archunit
-    - Junit
-    - Mockito
-    - Tomcat
-    - GPub/sub
-    - Zipkin
-    - Docker
-    - Locust
+    - Diseño y evolución de la arquitectura de aplicaciones y servicios distribuidos
+    - Dirección técnica y coordinación de equipos de backend, frontend y calidad
+    - Definición de soluciones de identidad, autenticación y autorización multitenant
+    - Diseño de integraciones con proveedores externos y de comunicaciones síncronas y asíncronas
+    - Supervisión de decisiones técnicas, calidad y evolución del ciclo de desarrollo
+  contribuciones:
+    - Rediseño de la arquitectura de seguridad con identidad única, cambio de contexto de negocio y servicios de autorización
+    - Separación de proveedores externos mediante adaptadores y capas de integración
+    - Definición de flujos REST y eventos con recuperación ante fallos y garantías según la operación
+  tecnologias:
+    - Java y Spring Boot
+    - OAuth2, OpenID Connect y Spring Security
+    - RabbitMQ, bases de datos relacionales y Redis
+    - Docker, Kubernetes, GitOps y Terraform
+    - Prometheus, Grafana y observabilidad distribuida
 
 - title: Desarrollador Sénior
   year: Junio 2020 - Noviembre 2020
