@@ -1,4 +1,4 @@
-<!-- Start Contact ===================================-->
+<!-- Start Contact -->
 <section class="full-page pd-0 clearfix" id="contact">
     <div class="contact">
         <div class="container-fluid">
@@ -10,32 +10,32 @@
                 </div>
                 <div class="contact-main">
                     <div class="row">
-                        <div class="col-md-4 col-sm-12">
-                            <div class="contact-info">
-                            </div>
-                        </div>
-                        <div class="col-md-8 col-sm-12">
+                        <div class="col-md-10 offset-md-1 col-sm-12">
                             <div class="contact-form text-left">
-                                <h3><span>Hola</span>, para cualquier consulta, no dudes en ponerte en contacto conmigo</h3>
-                                <form action="https://formspree.io/f/xdoygwjq" method="post" id="contact-form">
+                                <h3>¿Tienes un proyecto en mente?</h3>
+                                <p>Cuéntame qué necesitas resolver, qué aplicación quieres mejorar o qué proceso te gustaría automatizar. Podemos empezar por una conversación para valorar el alcance.</p>
+                                <form action="https://formspree.io/f/xdoygwjq" method="POST" id="contact-form">
                                     <div class="form-row">
-                                        <div class="form-group first-name col-md-12">
-                                            <input type="text" name="name" class="form-control" placeholder="Name" required>
+                                        <div class="form-group col-md-6">
+                                            <label for="contact-name">Nombre</label>
+                                            <input type="text" id="contact-name" name="name" class="form-control" placeholder="Tu nombre" autocomplete="name" required>
                                         </div>
-                                    </div>
-                                    <div class="form-row">
-                                        <div class="form-group email col-md-6">
-                                            <input type="email" name="email" class="form-control" placeholder="Email" required>
+                                        <div class="form-group col-md-6">
+                                            <label for="contact-email">Correo electrónico</label>
+                                            <input type="email" id="contact-email" name="email" class="form-control" placeholder="tu@empresa.com" autocomplete="email" required>
                                         </div>
                                     </div>
                                     <div class="form-group comment">
-                                        <textarea placeholder="write your comment" id="textarea" rows="8"></textarea>
+                                        <label for="contact-message">¿En qué puedo ayudarte?</label>
+                                        <textarea id="contact-message" name="message" class="form-control" placeholder="Describe brevemente tu proyecto o necesidad" rows="7" required></textarea>
                                     </div>
-                                    <button type="submit" class="hover-rpl btn btn-primary">Send Message</button>
-
-                                    <input type="hidden" name="_next" value="/thank-you" />
-                                    <input type="hidden" name="_subject" value="Contact form submission" />
-                                    <input type="text" name="_gotcha" style="display: none;" class="contact-form__gotcha" val="" />
+                                    <button type="submit" class="hover-rpl btn btn-primary">Enviar consulta</button>
+                                    <p><small>Los datos introducidos se utilizarán para responder a tu consulta. El formulario se procesa mediante Formspree.</small></p>
+                                    <input type="hidden" name="_subject" value="Nueva consulta desde dabiz.me">
+                                    <div aria-hidden="true" style="position:absolute;left:-9999px;">
+                                        <label for="contact-company-site">Dejar este campo vacío</label>
+                                        <input type="text" name="_gotcha" id="contact-company-site" tabindex="-1" autocomplete="off">
+                                    </div>
                                 </form>
                             </div>
                         </div>
@@ -45,4 +45,4 @@
         </div>
     </div>
 </section>
-<!-- End Content -->
+<!-- End Contact -->
