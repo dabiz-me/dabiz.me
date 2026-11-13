@@ -259,18 +259,29 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   }
 }
 
-/* Approved image lockup: do not reconstruct lettering in CSS. */
-.themeix-nav-logo {
-  padding: 26px 16px 22px;
+/* Last working dabiz wordmark, restored after faulty raster-in-SVG experiment. */
+.themeix-nav-logo { padding: 28px 17px 22px; }
+.themeix-nav-logo .dabiz-brand {
+  display: flex; align-items: center; justify-content: center;
+  gap: 9px; width: 100%; min-height: 75px; text-decoration: none;
 }
-.themeix-nav-logo img {
-  display: block;
-  width: 220px;
-  max-width: 100%;
-  height: auto;
-  margin: 0 auto;
+.dabiz-brand-symbol {
+  flex: 0 0 37px; height: 38px; display: flex;
+  align-items: center; gap: 4px; transform: skewX(-30deg);
 }
+.dabiz-brand-symbol i {
+  display: block; width: 16px; height: 34px; border-radius: 2px; background: #3c7890;
+}
+.dabiz-brand-symbol i + i { background: #62717e; opacity: .72; }
+.themeix-nav-logo .dabiz-brand-name {
+  color: #f7f8fa; font: 700 49px/1 'Inter','Montserrat',sans-serif;
+  letter-spacing: -.068em; white-space: nowrap;
+}
+.themeix-nav-logo .dabiz-brand:hover .dabiz-brand-name,
+.themeix-nav-logo .dabiz-brand:focus .dabiz-brand-name { color: #fff; }
 @media (max-width: 991px) {
   .themeix-nav-logo { padding: 20px 12px; }
-  .themeix-nav-logo img { width: 170px; }
+  .themeix-nav-logo .dabiz-brand { gap: 6px; }
+  .themeix-nav-logo .dabiz-brand-symbol { transform: skewX(-30deg) scale(.75); flex-basis: 29px; }
+  .themeix-nav-logo .dabiz-brand-name { font-size: 36px; }
 }
