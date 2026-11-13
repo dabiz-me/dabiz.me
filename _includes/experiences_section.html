@@ -5,12 +5,21 @@
             <div class="experiences-wrapper text-center">
                 <div class="section-title">
                     <div class="border-center"></div>
-                    <h2>Experiencia</h2>
+                    <h2>Trayectoria profesional</h2>
                     <div class="border-center"></div>
                 </div>
                 <div class="experiences-title">
-                    <div class="experiences-title-box"><img src="
-                        {{'/assets/images/educational-history-icon.png' | relative_url}}" alt="educational history icon" />
+                    <div class="experiences-title-box">
+                        <img src="{{ '/assets/images/educational-history-icon2.png' | relative_url }}" alt="" />
+                    </div>
+                    <p>Experiencia profesional</p>
+                </div>
+                <div class="work-history">
+                    {% include work_history.html %}
+                </div>
+                <div class="experiences-title">
+                    <div class="experiences-title-box">
+                        <img src="{{ '/assets/images/educational-history-icon.png' | relative_url }}" alt="" />
                     </div>
                     <p>Formación académica</p>
                 </div>
@@ -20,24 +29,18 @@
                         <div class="col-md-6 col-sm-12">
                             <div class="experiences-info-wrapper wow fadeIn">
                                 <div class="work-history-img">
-                                    <img src="{{exp_data.logo}}" alt="educational history icon" />
+                                    <img src="{{ exp_data.logo | relative_url }}" alt="" />
                                 </div>
-                                <div class="experiences-datetime">{{exp_data.year}}</div>
-                                <h3>{{exp_data.title}}</h3>
-                                <span>{{exp_data.designation}}</span>
-                                <p>{{exp_data.desc}}</p>
+                                <div class="experiences-datetime">{{ exp_data.year }}</div>
+                                <h3>{{ exp_data.title }}</h3>
+                                <span>{{ exp_data.designation }}</span>
+                                {% if exp_data.desc %}
+                                <p>{{ exp_data.desc }}</p>
+                                {% endif %}
                             </div>
                         </div>
-                       {% endfor %}
+                        {% endfor %}
                     </div>
-                </div>
-                <div class="experiences-title">
-                    <div class="experiences-title-box"><img src=" {{'/assets/images/educational-history-icon2.png' | relative_url}}" alt="educational history icon" />
-                    </div>
-                    <p>Experiencia Laboral</p>
-                </div>
-                <div class="work-history">
-                  {% include work_history.html %}
                 </div>
             </div>
         </div>
