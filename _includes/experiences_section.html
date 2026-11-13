@@ -30,7 +30,7 @@
                             <div class="experiences-info-wrapper wow fadeIn">
                                 {% if exp_data.logo and exp_data.logo != "" %}
                                 <div class="work-history-img">
-                                    <img src="{{ exp_data.logo | relative_url }}" alt="" />
+                                    <img src="{{ exp_data.logo | relative_url }}" alt=""{% if exp_data.logo contains "Logo_UNIR.png" %} class="unir-logo"{% endif %} />
                                 </div>
                                 {% endif %}
                                 <div class="experiences-datetime">{{ exp_data.year }}</div>
