@@ -1,5 +1,6 @@
 - title: Arquitecto de software / Responsable técnico
   empresa: Zertiban / Zertipayments
+  destacada: true
   year: Noviembre 2020 – actualidad
   descripcion: Evolución desde funciones de diseño y desarrollo hacia la definición de la arquitectura de software y la responsabilidad técnica de una plataforma empresarial de servicios digitales y financieros.
   sector: Servicios digitales y financieros
@@ -94,6 +95,7 @@
   year: Mayo 2017 - Diciembre 2018
   descripcion: Segunda etapa en la IGAE, Oficina de Informática Presupuestaria, al frente de un equipo de 6 desarrolladores, dimos servicio al área de Gestión Patrimonial y Portafirmas Electrónico.
   empresa: Axpe
+  destacada: true
   logo: /assets/images/axpe.png
   cliente: Intervención General de la administración del Estado
   sector: Administración pública
@@ -132,8 +134,9 @@
 
 - title: Jefe de Proyecto
   year: Mayo 2017 - Diciembre 2018
-  descripcion: Segunda etapa en la IGAE, Oficina de Informática Presupuestaria, al frente de un equipo de 6 desarrolladores, dimos servicio al área de Gestión Patrimonial y Portafirmas Electrónico.
+  descripcion: Gestión de proyectos y actividades de arquitectura para el área TIC del Ministerio de Justicia, incluyendo planificación, requisitos, estimaciones y mejora del servicio de arquitectura.
   empresa: Gesein
+  destacada: true
   logo: /assets/images/gesein.png
   cliente: DTIC Ministerio de justicia
   sector: Administración pública
@@ -177,6 +180,7 @@
   year: Diciembre 2007 - Octubre 2015
   descripcion: Análisis y diseño técnico de sistemas de punto de venta para El Corte Inglés, con responsabilidades de calidad, programación y coordinación.
   empresa: Atos
+  destacada: true
   logo: /assets/images/atos.png
   cliente: El Corte Inglés
   sector: Comercio al por mayor y al por menor
