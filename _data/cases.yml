@@ -1,0 +1,14 @@
+- title: Integraciones de terceros sin acoplar el negocio
+  summary: Arquitectura de adaptadores para incorporar o sustituir proveedores externos sin trasladar sus particularidades al núcleo de la aplicación.
+  detail: /casos/integraciones/
+  tags: APIs · Adaptadores · Webhooks
+
+- title: Identidad y autorización multitenant
+  summary: Rediseño de la seguridad para unificar identidades y gestionar el contexto de negocio y los permisos de manera explícita.
+  detail: /casos/identidad-multitenant/
+  tags: OAuth2 · Spring Security · Multitenancy
+
+- title: REST y eventos para servicios distribuidos
+  summary: Definición de interacciones síncronas y asíncronas según las necesidades de consistencia, respuesta y recuperación de cada operación.
+  detail: /casos/rest-eventos/
+  tags: REST · RabbitMQ · Outbox
