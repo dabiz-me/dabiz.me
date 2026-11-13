@@ -1492,3 +1492,37 @@ object {
 }
 
 @media screen and (max-width: 600px) {.experienceColumn { width: 100%;}}
+
+/* Contact form: align the introduction and fields within one centered column. */
+#contact .contact-form {
+    max-width: 820px;
+    margin: 0 auto;
+}
+
+#contact .contact-form h3 {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#contact .contact-form > p {
+    margin-bottom: 28px;
+    line-height: 1.7;
+}
+
+#contact .contact-form form {
+    max-width: none;
+    width: 100%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+#contact .contact-form form .form-control {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#contact .contact-form form > p {
+    margin-top: 14px;
+    margin-bottom: 0;
+    line-height: 1.5;
+}
