@@ -258,3 +258,67 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
     transition: none;
   }
 }
+
+/*
+ * Complete dabiz lockup from the approved concept:
+ * two diagonal strokes AND the wordmark (not the strokes alone).
+ * Sidebar-specific sizing preserves the Tfolio layout.
+ */
+.themeix-nav-logo {
+  padding: 28px 17px 22px;
+}
+.themeix-nav-logo .dabiz-brand {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 9px;
+  width: 100%;
+  min-height: 75px;
+  text-decoration: none;
+}
+.dabiz-brand-symbol {
+  flex: 0 0 37px;
+  height: 38px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  transform: skewX(-30deg);
+}
+.dabiz-brand-symbol i {
+  display: block;
+  width: 16px;
+  height: 34px;
+  border-radius: 2px;
+  background: #3c7890;
+}
+.dabiz-brand-symbol i + i {
+  background: #62717e;
+  opacity: .72;
+}
+.themeix-nav-logo .dabiz-brand-name {
+  color: #f7f8fa;
+  font: 700 49px/1 'Inter', 'Montserrat', sans-serif;
+  letter-spacing: -.068em;
+  white-space: nowrap;
+}
+.themeix-nav-logo .dabiz-brand:hover .dabiz-brand-name,
+.themeix-nav-logo .dabiz-brand:focus .dabiz-brand-name {
+  color: #fff;
+}
+@media (max-width: 991px) {
+  .themeix-nav-logo {
+    padding: 20px 12px;
+  }
+  .themeix-nav-logo .dabiz-brand {
+    gap: 6px;
+    justify-content: center;
+  }
+  .themeix-nav-logo .dabiz-brand-symbol {
+    transform: skewX(-30deg) scale(.75);
+    transform-origin: center;
+    flex-basis: 29px;
+  }
+  .themeix-nav-logo .dabiz-brand-name {
+    font-size: 36px;
+  }
+}
