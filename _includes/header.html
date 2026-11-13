@@ -19,7 +19,9 @@
                         <li><a href="{{ '/#services' | relative_url }}" class="btn-animated">servicios<i class="icon-services"></i></a></li>
                         <li><a href="{{ '/#portfolio' | relative_url }}" class="btn-animated">casos<i class="icon-portfolio"></i></a></li>
                         <li><a href="{{ '/#experiences' | relative_url }}" class="btn-animated">experiencia<i class="icon-experiences"></i></a></li>
+                        {% if site.blog %}
                         <li><a href="{{ site.blog }}" class="btn-animated" target="_blank" rel="noopener noreferrer">blog<i class="icon-blog"></i></a></li>
+                        {% endif %}
                         <li><a href="{{ '/#contact' | relative_url }}" class="btn-animated">contacto<i class="icon-contact"></i></a></li>
                     </ul>
                 </nav>
