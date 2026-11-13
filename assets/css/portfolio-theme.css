@@ -1,0 +1,260 @@
+/*
+ * dabiz.me — freelance portfolio visual refinement (v1)
+ * Loaded after Tfolio and its responsive stylesheet.
+ * Presentation-only overrides: existing grid and section structure are retained.
+ */
+:root {
+  --brand-ink: #252c34;
+  --brand-navy: #172b3a;
+  --brand-accent: #3c7890;
+  --brand-accent-dark: #285a70;
+  --brand-muted: #596775;
+  --brand-surface: #f7f8fa;
+  --brand-border: #e2e8ed;
+  --brand-white: #ffffff;
+}
+
+body {
+  background: var(--brand-surface);
+  color: var(--brand-ink);
+  font-family: 'Inter', 'Roboto', Arial, sans-serif;
+  line-height: 1.65;
+}
+
+p, li, a, span, label, input, textarea, button {
+  font-family: 'Inter', 'Roboto', Arial, sans-serif;
+}
+
+p, li, label {
+  color: var(--brand-ink);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--brand-navy);
+  letter-spacing: -0.025em;
+}
+
+a {
+  transition: color .2s ease, background-color .2s ease, border-color .2s ease;
+}
+
+a:hover, a:focus {
+  color: var(--brand-accent-dark);
+}
+
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
+  outline: 2px solid var(--brand-accent) !important;
+  outline-offset: 3px;
+}
+
+/* Keep the Tfolio sidebar and its original iconography. */
+.themeix-aside, .control-bar {
+  background-color: var(--brand-ink);
+}
+
+.themeix-nav-menu li a {
+  background-color: #f5f7f8;
+  color: var(--brand-ink);
+  border-bottom: 1px solid var(--brand-border);
+  font-weight: 500;
+  letter-spacing: .035em;
+}
+
+.themeix-nav-menu li:nth-child(odd) a {
+  border-bottom-color: var(--brand-border);
+}
+
+.themeix-nav-menu li a:before {
+  background: var(--brand-navy);
+}
+
+.themeix-nav-menu li.active a {
+  background: var(--brand-navy);
+  border-color: var(--brand-navy);
+  color: var(--brand-white);
+}
+
+.themeix-nav-menu li a:hover,
+.themeix-nav-menu li a:focus {
+  color: var(--brand-white);
+}
+
+.fixed-social-share a, .fixed-social-share a .fa {
+  color: #c6d6de;
+}
+
+/* Section rhythm without changing widths or columns. */
+#about {
+  background-color: #edf2f5;
+}
+
+#skills, #portfolio, #contact {
+  background-color: var(--brand-white);
+}
+
+#services, #experiences {
+  background-color: var(--brand-surface);
+}
+
+#services .services, #portfolio .services,
+#experiences .experiences, #contact .contact, #skills .skills {
+  background: transparent;
+}
+
+.section-title h2 {
+  color: var(--brand-navy);
+  letter-spacing: .025em;
+}
+
+.skills-wrapper .border-center, .services-wrapper .border-center,
+.experiences-wrapper .border-center, .contact-wrapper .border-center,
+.portfolio-wrapper .border-center {
+  background: var(--brand-accent);
+  height: 2px;
+}
+
+.about-content h4 {
+  color: var(--brand-accent-dark);
+  letter-spacing: .03em;
+}
+
+.about-content p {
+  line-height: 1.8;
+}
+
+.about-content .home-cv-btn {
+  color: var(--brand-accent-dark);
+  font-weight: 600;
+}
+
+.about-content .home-cv-btn:hover {
+  color: var(--brand-navy);
+}
+
+.about-content .home-social-share a {
+  color: var(--brand-accent-dark);
+  border-color: var(--brand-border);
+}
+
+.about-content .home-social-share a:hover {
+  background: var(--brand-navy);
+  border-color: var(--brand-navy);
+  color: #fff;
+}
+
+/* Lighter cards, more restrained borders and shadows. */
+.skills-box, .services-box, .experiences-info-wrapper {
+  border: 1px solid var(--brand-border);
+  background-color: var(--brand-white);
+  box-shadow: 0 5px 22px rgba(23, 43, 58, .045);
+  transition: border-color .2s ease, box-shadow .2s ease;
+}
+
+.skills-box:hover, .services-box:hover, .experiences-info-wrapper:hover {
+  border-color: #b8cdd8;
+  box-shadow: 0 10px 28px rgba(23, 43, 58, .09);
+}
+
+.skills-box, .services-box {
+  cursor: default;
+}
+
+.skills-box::before {
+  display: none;
+}
+
+.skills-box h5, .services-box h5, .experiences-info-wrapper h3 {
+  color: var(--brand-navy);
+  text-transform: none;
+}
+
+.services-box-logo {
+  border-color: var(--brand-border);
+  box-shadow: 0 4px 14px rgba(23, 43, 58, .08);
+}
+
+.services-box:hover .services-box-logo {
+  border-color: var(--brand-accent);
+}
+
+.services-box::before, .services-box::after {
+  background: var(--brand-accent);
+}
+
+#portfolio .services-box .btn-link, .case-detail a {
+  color: var(--brand-accent-dark);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: #b5cbd5;
+  text-underline-offset: 4px;
+}
+
+#portfolio .services-box .btn-link:hover, .case-detail a:hover {
+  color: var(--brand-navy);
+  text-decoration-color: currentColor;
+}
+
+.experiences-title {
+  background-color: #e9eff2;
+}
+
+.experiences-title-box, .experiences-info-wrapper .experiences-datetime {
+  background-color: var(--brand-navy);
+}
+
+.experiences-info-wrapper p {
+  color: var(--brand-muted);
+}
+
+/* Contact: avoid the old heavy form shadows and keep readable fields. */
+#contact .contact-form form {
+  background: var(--brand-surface);
+  border: 1px solid var(--brand-border);
+  box-shadow: 0 6px 24px rgba(23, 43, 58, .045);
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea {
+  border: 1px solid #d1dbe1;
+  box-shadow: none;
+  color: var(--brand-ink);
+}
+
+#contact .contact-form input:focus,
+#contact .contact-form textarea:focus {
+  border-color: var(--brand-accent);
+  box-shadow: 0 0 0 3px rgba(60, 120, 144, .12);
+}
+
+#contact .contact-form button {
+  background: var(--brand-navy);
+  color: var(--brand-white);
+  font-weight: 600;
+  letter-spacing: .035em;
+}
+
+#contact .contact-form button:hover {
+  background: var(--brand-accent-dark);
+  color: var(--brand-white);
+  box-shadow: none !important;
+}
+
+.cd-top {
+  background-color: var(--brand-navy);
+}
+
+/* Maintain the template's responsive grids and spacing. */
+@media (max-width: 767px) {
+  .section-title h2 {
+    letter-spacing: 0;
+  }
+  .skills-box, .services-box, .experiences-info-wrapper {
+    box-shadow: 0 3px 12px rgba(23, 43, 58, .05);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skills-box, .services-box, .experiences-info-wrapper, a {
+    transition: none;
+  }
+}
