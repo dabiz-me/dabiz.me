@@ -1526,3 +1526,13 @@ object {
     margin-bottom: 0;
     line-height: 1.5;
 }
+
+/* UNIR has a wide logo: limit its rendered size without stretching it. */
+.experiences-info .work-history-img img.unir-logo {
+    display: block;
+    width: auto;
+    height: auto;
+    max-width: 140px;
+    max-height: 64px;
+    object-fit: contain;
+}
