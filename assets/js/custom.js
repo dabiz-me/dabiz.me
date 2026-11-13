@@ -70,8 +70,11 @@
   });
 
   function blog_post_masonry() {
-    // masonry for blog post
-    var masonry = new Macy({
+    // The homepage and the case pages do not contain a masonry grid.
+    if (!document.querySelector('#macy-container') || typeof Macy === 'undefined') {
+      return;
+    }
+    new Macy({
       container: '#macy-container',
       trueOrder: false,
       waitForImages: false,
@@ -103,8 +106,10 @@
   blog_post_masonry();
 
 
-  // wow js for animated
-  new WOW().init();
+  // Initialize animations only when the plugin has loaded.
+  if (typeof WOW !== 'undefined') {
+    new WOW().init();
+  }
 
   function scroll_to_top() {
     var offset = 300,
@@ -127,8 +132,10 @@
   }
   scroll_to_top();
 
-  $(".themeix-aside").niceScroll({
-    cursorwidth: "10px"
-  });
+  if ($.fn.niceScroll) {
+    $(".themeix-aside").niceScroll({
+      cursorwidth: "10px"
+    });
+  }
 
 })(jQuery);
