@@ -10,12 +10,31 @@
   menu_switch();
 
 
-  // Smooth scrolling using jQuery easing
-  $(".themeix-nav-menu li a").on("click", function(){
-      $("html, body").animate({
-          scrollTop: $( $(this).attr("href") ).offset().top
-      }, 700);
-      return false;
+  // Smooth scroll only when the link targets an anchor on the current page.
+  // Detail pages and external links must keep their normal navigation.
+  $(".themeix-nav-menu li a").on("click", function(event) {
+    var destination;
+    try {
+      destination = new URL(this.href, window.location.href);
+    } catch (error) {
+      return;
+    }
+
+    var samePage = destination.origin === window.location.origin &&
+      destination.pathname.replace(/\/$/, "") === window.location.pathname.replace(/\/$/, "") &&
+      destination.search === window.location.search;
+
+    if (!samePage || !destination.hash) {
+      return;
+    }
+
+    var target = document.getElementById(decodeURIComponent(destination.hash.slice(1)));
+    if (!target) {
+      return;
+    }
+
+    event.preventDefault();
+    $("html, body").animate({ scrollTop: $(target).offset().top }, 700);
   });
   
 
