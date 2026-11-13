@@ -1,17 +1,16 @@
 <div class="row">
     {% for exp_data in site.data.work_history %}
-    <div class="col-md-6 col-sm-12 experienceRow">
+    <div class="col-md-6 col-sm-12">
         <div class="experiences-info-wrapper wow fadeIn">
             <div class="work-history-img">
                 {% if exp_data.logo != "" %}
-                    <img src="{{exp_data.logo}}" alt=""/>
+                    <img src="{{ exp_data.logo | relative_url }}" alt=""/>
                 {% endif %}
             </div>
             <div class="experiences-datetime">{{exp_data.year}}</div>
             <h3>{{exp_data.title}}</h3>
             <hr>
-            </br></hr>
-            <p>{{exp_data.descripcion}}</p>
+            <p>{{ exp_data.descripcion }}</p>
             <br>
             <div class="experienceColumn">
                 {% if exp_data.cliente %}
@@ -63,7 +62,7 @@
                     {% endfor %}
                 </ul>
             </div>
-            <div class="experienceRow"></div>
+            <div class="clearfix"></div>
         </div>
     </div>
     {% endfor %}
