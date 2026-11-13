@@ -28,9 +28,11 @@
                         {% for exp_data in site.data.experiences %}
                         <div class="col-md-6 col-sm-12">
                             <div class="experiences-info-wrapper wow fadeIn">
+                                {% if exp_data.logo and exp_data.logo != "" %}
                                 <div class="work-history-img">
                                     <img src="{{ exp_data.logo | relative_url }}" alt="" />
                                 </div>
+                                {% endif %}
                                 <div class="experiences-datetime">{{ exp_data.year }}</div>
                                 <h3>{{ exp_data.title }}</h3>
                                 <span>{{ exp_data.designation }}</span>
