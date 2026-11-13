@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-labelledby="title">
+  <title id="title">dabiz</title>
+  <rect width="64" height="64" rx="12" fill="#172B3A"/>
+  <path d="M24 14H38L20 49H6Z" fill="#3C7890"/>
+  <path d="M43 14H57L39 49H25Z" fill="#7C9BAA"/>
+</svg>
