@@ -1,5 +1,6 @@
 <div class="row">
-    {% for exp_data in site.data.work_history %}
+    {% assign destacados = site.data.work_history | where: "destacada", true %}
+    {% for exp_data in destacados %}
     <div class="col-lg-6 col-md-12">
         <article class="experiences-info-wrapper wow fadeIn">
             <div class="experiences-datetime">{{ exp_data.year }}</div>
@@ -34,5 +35,28 @@
             {% endif %}
         </article>
     </div>
+    {% endfor %}
+</div>
+<div class="experiences-title">
+    <p style="float: none; text-align: center; padding: 24px;">Trayectoria complementaria</p>
+</div>
+<div class="row">
+    {% for exp_data in site.data.work_history %}
+    {% unless exp_data.destacada %}
+    <div class="col-lg-6 col-md-12">
+        <article class="experiences-info-wrapper wow fadeIn">
+            <div class="experiences-datetime">{{ exp_data.year }}</div>
+            <h3>{{ exp_data.title }}</h3>
+            {% if exp_data.empresa %}
+            <p><strong>{{ exp_data.empresa }}</strong>{% if exp_data.cliente %} · {{ exp_data.cliente }}{% endif %}</p>
+            {% elsif exp_data.cliente %}
+            <p><strong>{{ exp_data.cliente }}</strong></p>
+            {% endif %}
+            {% if exp_data.descripcion %}
+            <p>{{ exp_data.descripcion | escape }}</p>
+            {% endif %}
+        </article>
+    </div>
+    {% endunless %}
     {% endfor %}
 </div>
