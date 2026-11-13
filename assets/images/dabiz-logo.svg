@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="340" height="112" viewBox="0 0 340 112" role="img" aria-labelledby="title">
+  <title id="title">dabiz</title>
+  <path d="M34 38 H57 Q60 38 58 42 L27 93 Q26 95 23 95 H0 Q-3 95 -1 92 L30 41 Q32 38 34 38 Z" transform="translate(8 -8)" fill="#3C7890"/>
+  <path d="M70 38 H89 Q92 38 90 42 L59 93 Q58 95 55 95 H36 Q33 95 35 92 L66 41 Q68 38 70 38 Z" transform="translate(8 -8)" fill="#65727E" opacity=".70"/>
+  <text x="105" y="80" fill="#F7F8FA" font-family="Inter,Montserrat,Arial,Helvetica,sans-serif" font-size="62" font-weight="700" letter-spacing="-3.6">dabiz</text>
+</svg>
