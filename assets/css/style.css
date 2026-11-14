@@ -1536,3 +1536,41 @@ object {
     max-height: 64px;
     object-fit: contain;
 }
+
+
+/* Services only: aligned cards and consistent decorative line icons. */
+#services .services-card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: stretch;
+}
+#services .services-card-grid > [class*="col-"] {
+    float: none;
+    width: auto;
+    max-width: none;
+    min-width: 0;
+    display: flex;
+}
+#services .services-card-grid .services-box {
+    flex: 1 1 auto;
+    min-width: 0;
+    width: 100%;
+}
+#services .services-card-grid .services-box-logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #0e0e0e;
+}
+#services .services-card-grid .services-box-logo img {
+    display: block;
+    width: 43px;
+    height: 43px;
+    margin: 0;
+    object-fit: contain;
+}
+@media (max-width: 767px) {
+    #services .services-card-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+}
