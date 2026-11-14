@@ -10,12 +10,31 @@
   menu_switch();
 
 
-  // Smooth scrolling using jQuery easing
-  $(".themeix-nav-menu li a").on("click", function(){
-      $("html, body").animate({
-          scrollTop: $( $(this).attr("href") ).offset().top
-      }, 700);
-      return false;
+  // Smooth scroll only when the link targets an anchor on the current page.
+  // Detail pages and external links must keep their normal navigation.
+  $(".themeix-nav-menu li a").on("click", function(event) {
+    var destination;
+    try {
+      destination = new URL(this.href, window.location.href);
+    } catch (error) {
+      return;
+    }
+
+    var samePage = destination.origin === window.location.origin &&
+      destination.pathname.replace(/\/$/, "") === window.location.pathname.replace(/\/$/, "") &&
+      destination.search === window.location.search;
+
+    if (!samePage || !destination.hash) {
+      return;
+    }
+
+    var target = document.getElementById(decodeURIComponent(destination.hash.slice(1)));
+    if (!target) {
+      return;
+    }
+
+    event.preventDefault();
+    $("html, body").animate({ scrollTop: $(target).offset().top }, 700);
   });
   
 
@@ -51,8 +70,11 @@
   });
 
   function blog_post_masonry() {
-    // masonry for blog post
-    var masonry = new Macy({
+    // The homepage and the case pages do not contain a masonry grid.
+    if (!document.querySelector('#macy-container') || typeof Macy === 'undefined') {
+      return;
+    }
+    new Macy({
       container: '#macy-container',
       trueOrder: false,
       waitForImages: false,
@@ -84,8 +106,10 @@
   blog_post_masonry();
 
 
-  // wow js for animated
-  new WOW().init();
+  // Initialize animations only when the plugin has loaded.
+  if (typeof WOW !== 'undefined') {
+    new WOW().init();
+  }
 
   function scroll_to_top() {
     var offset = 300,
@@ -108,8 +132,10 @@
   }
   scroll_to_top();
 
-  $(".themeix-aside").niceScroll({
-    cursorwidth: "10px"
-  });
+  if ($.fn.niceScroll) {
+    $(".themeix-aside").niceScroll({
+      cursorwidth: "10px"
+    });
+  }
 
 })(jQuery);

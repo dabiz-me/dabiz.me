@@ -1,51 +1,30 @@
-- title: Desarrollador Sénior
-  year: Noviembre 2020 -
-  descripcion: En estrecha colaboración con el CTO, mi responsabilidad se centra en labores de arquitectura, diseño y desarrollo.
-  logo: /assets/images/loycus.png
-  sector:
-    - Bancario
-  area_funcional:
-    - Ventas (EIDAS, PSD2)
+- title: Arquitecto de software / Responsable técnico
+  empresa: Zertiban / Zertipayments
+  destacada: true
+  year: Noviembre 2020 – actualidad
+  descripcion: Evolución desde funciones de diseño y desarrollo hacia la definición de la arquitectura de software y la responsabilidad técnica de una plataforma empresarial de servicios digitales y financieros.
+  sector: Servicios digitales y financieros
   responsabilidades:
-    - Arquitectura
-    - Diseño técnico detallado
-    - Soporte al equipo de desarrollo
-    - Programación
-  metodologia:
-    - Scrum
-  ecosistema:
-    - Mac/os, linux
-    - Jira
-    - Confluence
-    - CI/CD Google Cloud
-    - Git/Bitbucket
-    - Sonar
-    - Maven
-    - Nexus
-  arquitectura:
-    - MSA
-  desarrollo:
-    - Java 11
-    - Spring Boot 2
-    - Spring 4 (security, data, batch, core)
-    - JWT
-    - Mysql
-    - Mongo
-    - Redis
-    - Resilience4j
-    - Elastic Stack
-    - Archunit
-    - Junit
-    - Mockito
-    - Tomcat
-    - GPub/sub
-    - Zipkin
-    - Docker
-    - Locust
+    - Diseño y evolución de la arquitectura de aplicaciones y servicios distribuidos
+    - Dirección técnica y coordinación de equipos de backend, frontend y calidad
+    - Definición de soluciones de identidad, autenticación y autorización multitenant
+    - Diseño de integraciones con proveedores externos y de comunicaciones síncronas y asíncronas
+    - Supervisión de decisiones técnicas, calidad y evolución del ciclo de desarrollo
+  contribuciones:
+    - Rediseño de la arquitectura de seguridad con identidad única, cambio de contexto de negocio y servicios de autorización
+    - Separación de proveedores externos mediante adaptadores y capas de integración
+    - Definición de flujos REST y eventos con recuperación ante fallos y garantías según la operación
+  tecnologias:
+    - Java y Spring Boot
+    - OAuth2, OpenID Connect y Spring Security
+    - RabbitMQ, bases de datos relacionales y Redis
+    - Docker, Kubernetes, GitOps y Terraform
+    - Prometheus, Grafana y observabilidad distribuida
 
 - title: Desarrollador Sénior
   year: Junio 2020 - Noviembre 2020
-  descripcion: Breve colaboración en el desarrollo de Maggie, solución tecnológica para integrar las diferentes plataformas nacionales en una única arquitectura.
+  descripcion: Desarrollo de una solución de integración de plataformas nacionales para el proyecto Maggie, en un entorno bancario.
+  empresa: Babel
   logo: /assets/images/babel.png
   cliente: ING
   sector: Bancario
@@ -77,7 +56,8 @@
 
 - title: Desarrollador Sénior
   year: Abril 2019 - Junio 2020
-  descripcion: De vuelta a labores más técnicas, colaboré en el desarrollo en la adopción del estándar NDC de IATA al legacy de Iberia
+  descripcion: Diseño técnico y desarrollo para incorporar el estándar NDC de IATA a sistemas existentes de Iberia.
+  empresa: SlashMobility
   logo: /assets/images/slashmobility.png
   cliente: Iberia
   sector: Transporte
@@ -114,6 +94,8 @@
 - title: Coordinador Técnico de proyectos
   year: Mayo 2017 - Diciembre 2018
   descripcion: Segunda etapa en la IGAE, Oficina de Informática Presupuestaria, al frente de un equipo de 6 desarrolladores, dimos servicio al área de Gestión Patrimonial y Portafirmas Electrónico.
+  empresa: Axpe
+  destacada: true
   logo: /assets/images/axpe.png
   cliente: Intervención General de la administración del Estado
   sector: Administración pública
@@ -150,9 +132,11 @@
     - jstl
     - Weblogic
 
-- title: Jefe de Proyecto
-  year: Mayo 2017 - Diciembre 2018
-  descripcion: Segunda etapa en la IGAE, Oficina de Informática Presupuestaria, al frente de un equipo de 6 desarrolladores, dimos servicio al área de Gestión Patrimonial y Portafirmas Electrónico.
+- title: Jefe de equipo de arquitectura de software
+  year: Septiembre 2016 - Mayo 2017
+  descripcion: Gestión de proyectos y actividades de arquitectura para el área TIC del Ministerio de Justicia, incluyendo planificación, requisitos, estimaciones y mejora del servicio de arquitectura.
+  empresa: Gesein
+  destacada: true
   logo: /assets/images/gesein.png
   cliente: DTIC Ministerio de justicia
   sector: Administración pública
@@ -194,7 +178,9 @@
 
 - title: Analista Orgánico
   year: Diciembre 2007 - Octubre 2015
-  descripcion: Evolución personal y madurez profesional, resumen este periodo de colaboración en departamento POS/TPV del Grupo El Corte Inglés.
+  descripcion: Análisis y diseño técnico de sistemas de punto de venta para El Corte Inglés, con responsabilidades de calidad, programación y coordinación.
+  empresa: Atos
+  destacada: true
   logo: /assets/images/atos.png
   cliente: El Corte Inglés
   sector: Comercio al por mayor y al por menor
@@ -229,7 +215,8 @@
 
 - title: Analista Programador
   year: Junio 2005 - Diciembre 2007
-  descripcion: Primer cambio de aires, paso de desarrollos internos a servicios en cliente. Puesto dedicado a la programación, supuso la primera toma de contacto directa con el cliente.
+  descripcion: Desarrollo de aplicaciones para la Intervención General de la Administración del Estado, trabajando directamente con el cliente.
+  empresa: Indra
   logo: /assets/images/indra.png
   cliente: Intervención General de la administración del Estado
   sector: Administración pública
@@ -252,7 +239,8 @@
 
 - title: Analista Programador
   year: Junio 2000 - Junio 2005
-  descripcion: Primera incursión en el mundo de las tecnologías de la información de la mano de Thales. Tras licenciarme en psicología, decido cambiar de aires y ser más práctico.
+  descripcion: Inicio de la trayectoria profesional en ingeniería de software, participando en el desarrollo de aplicaciones y sistemas para distintos clientes.
+  empresa: Thales
   logo: /assets/images/thales.png
   sector: Tecnologías de la información
   area_funcional: Servicio al cliente

@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 562" aria-hidden="true">
+  <!-- Asymmetric data-flow layout adapted from the supplied shopping/order diagram. -->
+  <g stroke="#617e91" stroke-width="1.65" fill="none" stroke-linejoin="round" stroke-linecap="round">
+    <circle cx="410" cy="130" r="46" stroke-width="3"/>
+    <circle cx="412" cy="270" r="45" stroke-width="3"/>
+    <circle cx="268" cy="425" r="46" stroke-width="3"/>
+    <circle cx="547" cy="400" r="45" stroke-width="3"/>
+    <rect x="608" y="47" width="113" height="47" rx="7" stroke-width="3"/>
+    <rect x="38" y="328" width="114" height="48" rx="7" stroke-width="3"/>
+    <rect x="302" y="313" width="83" height="35" rx="5" stroke-width="3"/>
+    <rect x="736" y="350" width="113" height="55" rx="7" stroke-width="3"/>
+    <rect x="735" y="464" width="114" height="47" rx="7" stroke-width="3"/>
+    <path d="M410 84V11H648V47M608 70H512V123H456M721 70H768V123H456"/>
+    <path d="M38 352H1V134H366M97 328V164H366M152 355H176V351H224V397"/>
+    <path d="M115 328V254H365M127 328V282H365"/>
+    <path d="M410 177V220M457 148H508V251H454"/>
+    <path d="M385 333H458V366H507M345 348V402H312"/>
+    <path d="M314 424H502M385 331H475V352H510M455 271H548V355"/>
+    <path d="M593 395H735M592 375H662V307H819V350M593 419H681V324H793V350"/>
+    <path d="M547 445V527H735V487M151 359H225V384M97 376V502H548V445"/>
+    <path d="M38 350H0V536H547V445"/>
+    <path d="M152 353H186V383H224"/>
+    <path d="M343 345V311H368M738 486H694V554H562V446"/>
+    <g fill="#617e91" stroke="none">
+      <path d="m411 84-5-9h10zM366 134l-9-5v10zM366 164l-9-5v10zM366 254l-9-5v10zM366 282l-9-5v10zM455 220l-5-9h10zM457 148l-9-5v10z"/>
+      <path d="m507 366-9-5v10zM507 395l-9-5v10zM735 375l-9-5v10zM735 392l-9-5v10zM736 487l-9-5v10z"/>
+    </g>
+  </g>
+  <g font-family="Arial,sans-serif" fill="#617e91" font-size="11" text-anchor="middle" font-weight="500">
+    <text x="410" y="116">4.1</text><text x="410" y="130">Shopping</text><text x="410" y="144">Cart</text>
+    <text x="412" y="254">4.2</text><text x="412" y="270">Change</text><text x="412" y="284">Order</text>
+    <text x="268" y="413">4.3</text><text x="268" y="428">Delivery</text><text x="268" y="443">data</text>
+    <text x="547" y="388">4.4</text><text x="547" y="403">Check</text><text x="547" y="418">out</text>
+    <text x="665" y="75">Product</text><text x="95" y="355">Product</text><text x="344" y="335">Order</text><text x="792" y="379">Order</text><text x="792" y="491">Ordering details</text>
+  </g>
+</svg>

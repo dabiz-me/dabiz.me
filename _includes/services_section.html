@@ -8,17 +8,24 @@
                     <h2>Servicios</h2>
                     <div class="border-center"></div>
                 </div>
+                <p>Soluciones adaptadas a los problemas y necesidades de cada empresa, desde herramientas de gestión hasta sistemas empresariales.</p>
                 <div class="row">
                     {% for services_data in site.data.services %}
-                    <div class="col-lg-4 col-md-6">
+                    <div class="col-lg-6 col-md-6">
                         <div class="services-box wow fadeIn text-center">
-                            <div class="services-box-logo"><img src="{{services_data.icon | relative_url}}" alt="services logo"/></div>
-                            <h5>{{services_data.title}}</h5>
-                            <p>{{services_data.desc}}</p>
+                            <div class="services-box-logo">
+                                {% if services_data.icon %}
+                                <img src="{{ services_data.icon | relative_url }}" alt="" aria-hidden="true"/>
+                                {% elsif services_data.fa_icon %}
+                                <i class="fa fa-{{ services_data.fa_icon }} fa-4x" aria-hidden="true"></i>
+                                {% endif %}
+                            </div>
+                            <h5>{{ services_data.title }}</h5>
+                            <p>{{ services_data.desc }}</p>
                         </div>
-                     </div>
+                    </div>
                     {% endfor %}
-                  </div>
+                </div>
             </div>
         </div>
     </div>

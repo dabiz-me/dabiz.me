@@ -1,71 +1,28 @@
-        <!-- Start Portfolio ===================================-->
-        <section class="full-page pd-0 clearfix" id="portfolio">
-            <div class="portfolio">
-                <div class="container-fluid">
-                    <div class="portfolio-wrapper text-center">
-                        <div class="section-title">
-                            <div class="border-center"></div>
-                            <h2>view my portfolio</h2>
-                            <div class="border-center"></div>
-                        </div>
-                        <div class="portfolio-filters button-group">
-                            <button type="button" class="button is-checked" data-filter="*">all</button>
-                            <button type="button" class="button" data-filter=".graphic">graphic</button>
-                            <button type="button" class="button" data-filter=".developement">developement</button>
-                            <button type="button" class="button" data-filter=".coding">coding</button>
-                        </div>
-                        <div class="portfolio-grid row">
-                            <div class="portfolio-item graphic coding">
-                                <div class="portflio-item-wrap  wow fadeIn">
-                                    <a href=" {{'/assets/images/portfolio-img.jpg' | relative_url}} " data-lightbox="roadtrip">
-                                        <img src=" {{'/assets/images/portfolio-img.jpg' | relative_url}}" alt="portfolio image" />
-                                        <div class="portfolio-overlay"><img src=" {{'/assets/images/portflio-image-hover.png' | relative_url}}" alt=" portfolio image hover"/></div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="portfolio-item developement">
-                                <div class="portflio-item-wrap  wow fadeIn">
-                                    <a href=" {{'/assets/images/portfolio-img2.jpg' | relative_url}}" data-lightbox="roadtrip">
-                                        <img src=" {{'/assets/images/portfolio-img2.jpg' | relative_url}}" alt="portfolio image" />
-                                        <div class="portfolio-overlay"><img src=" {{'/assets/images/portflio-image-hover.png' | relative_url}}" alt=" portfolio image hover"/></div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="portfolio-item  developement">
-                                <div class="portflio-item-wrap  wow fadeIn">
-                                    <a href=" {{'/assets/images/portfolio-img3.jpg' | relative_url}}" data-lightbox="roadtrip">
-                                        <img src=" {{'/assets/images/portfolio-img3.jpg' | relative_url}}" alt="portfolio image" />
-                                        <div class="portfolio-overlay"><img src=" {{'/assets/images/portflio-image-hover.png' | relative_url}}" alt=" portfolio image hover"/></div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="portfolio-item graphic coding">
-                                <div class="portflio-item-wrap  wow fadeIn">
-                                    <a href=" {{'/assets/images/portfolio-img4.jpg' | relative_url}}" data-lightbox="roadtrip">
-                                        <img src=" {{'/assets/images/portfolio-img4.jpg' | relative_url}}" alt="portfolio image" />
-                                        <div class="portfolio-overlay"><img src=" {{'/assets/images/portflio-image-hover.png' | relative_url}}" alt=" portfolio image hover"/></div>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="portfolio-item graphic coding">
-                                <div class="portflio-item-wrap  wow fadeIn">
-                                    <a href=" {{'/assets/images/portfolio-img5.jpg' | relative_url}}" data-lightbox="roadtrip">
-                                        <img src=" {{'/assets/images/portfolio-img5.jpg' | relative_url}}" alt="portfolio image" />
-                                        <div class="portfolio-overlay"><img src=" {{'/assets/images/portflio-image-hover.png' | relative_url}}" alt=" portfolio image hover"/></div>
-                                    </a>
-                                </div>
-                            </div>
-							<div class="portfolio-item developement">
-                                <div class="portflio-item-wrap  wow fadeIn">
-                                    <a href=" {{'/assets/images/portfolio-img.jpg' | relative_url}}" data-lightbox="roadtrip">
-                                        <img src=" {{'/assets/images/portfolio-img.jpg' | relative_url}}" alt="portfolio image" />
-                                        <div class="portfolio-overlay"><img src=" {{'/assets/images/portflio-image-hover.png' | relative_url}}" alt=" portfolio image hover"/></div>
-                                    </a>
-                                </div>
-                            </div>
+<!-- Start Portfolio -->
+<section class="full-page clearfix" id="portfolio">
+    <div class="services">
+        <div class="container-fluid">
+            <div class="services-wrapper text-center">
+                <div class="section-title">
+                    <div class="border-center"></div>
+                    <h2>Casos profesionales</h2>
+                    <div class="border-center"></div>
+                </div>
+                <p>Problemas de arquitectura e integración abordados en proyectos empresariales, presentados sin información confidencial.</p>
+                <div class="row">
+                    {% for case in site.data.cases %}
+                    <div class="col-lg-4 col-md-6">
+                        <div class="services-box wow fadeIn text-center">
+                            <h5>{{ case.title }}</h5>
+                            <p>{{ case.summary }}</p>
+                            <p><small>{{ case.tags }}</small></p>
+                            <a class="btn btn-link" href="{{ case.detail | relative_url }}">Leer el caso <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
                         </div>
                     </div>
+                    {% endfor %}
                 </div>
             </div>
-        </section>
-        <!-- End Portfolio ==================-->
+        </div>
+    </div>
+</section>
+<!-- End Portfolio -->

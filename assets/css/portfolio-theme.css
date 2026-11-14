@@ -1,0 +1,448 @@
+/*
+ * dabiz.me — freelance portfolio visual refinement (v1)
+ * Loaded after Tfolio and its responsive stylesheet.
+ * Presentation-only overrides: existing grid and section structure are retained.
+ */
+:root {
+  --brand-ink: #252c34;
+  --brand-navy: #172b3a;
+  --brand-accent: #3c7890;
+  --brand-accent-dark: #285a70;
+  --brand-muted: #596775;
+  --brand-surface: #f7f8fa;
+  --brand-border: #e2e8ed;
+  --brand-white: #ffffff;
+}
+
+body {
+  background: var(--brand-surface);
+  color: var(--brand-ink);
+  font-family: 'Inter', 'Roboto', Arial, sans-serif;
+  line-height: 1.65;
+}
+
+p, li, a, span, label, input, textarea, button {
+  font-family: 'Inter', 'Roboto', Arial, sans-serif;
+}
+
+p, li, label {
+  color: var(--brand-ink);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--brand-navy);
+  letter-spacing: -0.025em;
+}
+
+a {
+  transition: color .2s ease, background-color .2s ease, border-color .2s ease;
+}
+
+a:hover, a:focus {
+  color: var(--brand-accent-dark);
+}
+
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
+  outline: 2px solid var(--brand-accent) !important;
+  outline-offset: 3px;
+}
+
+/* Keep the Tfolio sidebar and its original iconography. */
+.themeix-aside, .control-bar {
+  background-color: var(--brand-ink);
+}
+
+.themeix-nav-menu li a {
+  background-color: #f5f7f8;
+  color: var(--brand-ink);
+  border-bottom: 1px solid var(--brand-border);
+  font-weight: 500;
+  letter-spacing: .035em;
+}
+
+.themeix-nav-menu li:nth-child(odd) a {
+  border-bottom-color: var(--brand-border);
+}
+
+.themeix-nav-menu li a:before {
+  background: var(--brand-navy);
+}
+
+.themeix-nav-menu li.active a {
+  background: var(--brand-navy);
+  border-color: var(--brand-navy);
+  color: var(--brand-white);
+}
+
+.themeix-nav-menu li a:hover,
+.themeix-nav-menu li a:focus {
+  color: var(--brand-white);
+}
+
+.fixed-social-share a, .fixed-social-share a .fa {
+  color: #c6d6de;
+}
+
+/* Section rhythm without changing widths or columns. */
+#about {
+  background-color: #edf2f5;
+}
+
+#skills, #portfolio, #contact {
+  background-color: var(--brand-white);
+}
+
+#services, #experiences {
+  background-color: var(--brand-surface);
+}
+
+#services .services, #portfolio .services,
+#experiences .experiences, #contact .contact, #skills .skills {
+  background: transparent;
+}
+
+.section-title h2 {
+  color: var(--brand-navy);
+  letter-spacing: .025em;
+}
+
+.skills-wrapper .border-center, .services-wrapper .border-center,
+.experiences-wrapper .border-center, .contact-wrapper .border-center,
+.portfolio-wrapper .border-center {
+  background: var(--brand-accent);
+  height: 2px;
+}
+
+.about-content h4 {
+  color: var(--brand-accent-dark);
+  letter-spacing: .03em;
+}
+
+.about-content p {
+  line-height: 1.8;
+}
+
+.about-content .home-cv-btn {
+  color: var(--brand-accent-dark);
+  font-weight: 600;
+}
+
+.about-content .home-cv-btn:hover {
+  color: var(--brand-navy);
+}
+
+.about-content .home-social-share a {
+  color: var(--brand-accent-dark);
+  border-color: var(--brand-border);
+}
+
+.about-content .home-social-share a:hover {
+  background: var(--brand-navy);
+  border-color: var(--brand-navy);
+  color: #fff;
+}
+
+/* Lighter cards, more restrained borders and shadows. */
+.skills-box, .services-box, .experiences-info-wrapper {
+  border: 1px solid var(--brand-border);
+  background-color: var(--brand-white);
+  box-shadow: 0 5px 22px rgba(23, 43, 58, .045);
+  transition: border-color .2s ease, box-shadow .2s ease;
+}
+
+.skills-box:hover, .services-box:hover, .experiences-info-wrapper:hover {
+  border-color: #b8cdd8;
+  box-shadow: 0 10px 28px rgba(23, 43, 58, .09);
+}
+
+.skills-box, .services-box {
+  cursor: default;
+}
+
+.skills-box::before {
+  display: none;
+}
+
+.skills-box h5, .services-box h5, .experiences-info-wrapper h3 {
+  color: var(--brand-navy);
+  text-transform: none;
+}
+
+.services-box-logo {
+  border-color: var(--brand-border);
+  box-shadow: 0 4px 14px rgba(23, 43, 58, .08);
+}
+
+.services-box:hover .services-box-logo {
+  border-color: var(--brand-accent);
+}
+
+.services-box::before, .services-box::after {
+  background: var(--brand-accent);
+}
+
+#portfolio .services-box .btn-link, .case-detail a {
+  color: var(--brand-accent-dark);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: #b5cbd5;
+  text-underline-offset: 4px;
+}
+
+#portfolio .services-box .btn-link:hover, .case-detail a:hover {
+  color: var(--brand-navy);
+  text-decoration-color: currentColor;
+}
+
+.experiences-title {
+  background-color: #e9eff2;
+}
+
+.experiences-title-box, .experiences-info-wrapper .experiences-datetime {
+  background-color: var(--brand-navy);
+}
+
+.experiences-info-wrapper p {
+  color: var(--brand-muted);
+}
+
+/* Contact: avoid the old heavy form shadows and keep readable fields. */
+#contact .contact-form form {
+  background: var(--brand-surface);
+  border: 1px solid var(--brand-border);
+  box-shadow: 0 6px 24px rgba(23, 43, 58, .045);
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea {
+  border: 1px solid #d1dbe1;
+  box-shadow: none;
+  color: var(--brand-ink);
+}
+
+#contact .contact-form input:focus,
+#contact .contact-form textarea:focus {
+  border-color: var(--brand-accent);
+  box-shadow: 0 0 0 3px rgba(60, 120, 144, .12);
+}
+
+#contact .contact-form button {
+  background: var(--brand-navy);
+  color: var(--brand-white);
+  font-weight: 600;
+  letter-spacing: .035em;
+}
+
+#contact .contact-form button:hover {
+  background: var(--brand-accent-dark);
+  color: var(--brand-white);
+  box-shadow: none !important;
+}
+
+.cd-top {
+  background-color: var(--brand-navy);
+}
+
+/* Maintain the template's responsive grids and spacing. */
+@media (max-width: 767px) {
+  .section-title h2 {
+    letter-spacing: 0;
+  }
+  .skills-box, .services-box, .experiences-info-wrapper {
+    box-shadow: 0 3px 12px rgba(23, 43, 58, .05);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .skills-box, .services-box, .experiences-info-wrapper, a {
+    transition: none;
+  }
+}
+
+/* Last working dabiz wordmark, restored after faulty raster-in-SVG experiment. */
+.themeix-nav-logo { padding: 28px 17px 22px; }
+.themeix-nav-logo .dabiz-brand {
+  display: flex; align-items: center; justify-content: center;
+  gap: 9px; width: 100%; min-height: 75px; text-decoration: none;
+}
+.dabiz-brand-symbol {
+  flex: 0 0 37px; height: 38px; display: flex;
+  align-items: center; gap: 4px; transform: skewX(-30deg);
+}
+.dabiz-brand-symbol i {
+  display: block; width: 16px; height: 34px; border-radius: 2px; background: #3c7890;
+}
+.dabiz-brand-symbol i + i { background: #62717e; opacity: .72; }
+.themeix-nav-logo .dabiz-brand-name {
+  color: #f7f8fa; font: 700 49px/1 'Inter','Montserrat',sans-serif;
+  letter-spacing: -.068em; white-space: nowrap;
+}
+.themeix-nav-logo .dabiz-brand:hover .dabiz-brand-name,
+.themeix-nav-logo .dabiz-brand:focus .dabiz-brand-name { color: #fff; }
+@media (max-width: 991px) {
+  .themeix-nav-logo { padding: 20px 12px; }
+  .themeix-nav-logo .dabiz-brand { gap: 6px; }
+  .themeix-nav-logo .dabiz-brand-symbol { transform: skewX(-30deg) scale(.75); flex-basis: 29px; }
+  .themeix-nav-logo .dabiz-brand-name { font-size: 36px; }
+}
+
+
+/* dabiz.me — homepage redesign. The legacy inner sections remain intact. */
+:root{--dabiz-navy:#1d2a36;--dabiz-ink:#142738;--dabiz-blue:#087595}
+@media(min-width:1101px){
+ .themeix-aside.dabiz-sidebar{width:220px!important;background:var(--dabiz-navy)!important}
+ .themeix-main-content{width:100%!important;padding-left:220px!important}
+}
+.dabiz-sidebar,.dabiz-sidebar .themeix-slide-menu,.dabiz-sidebar .themeix-fixed-nav{background:var(--dabiz-navy)!important}
+.dabiz-sidebar .themeix-fixed-nav{min-height:100vh;display:flex;flex-direction:column;justify-content:space-between}
+.dabiz-sidebar nav{width:100%}
+.dabiz-sidebar .themeix-nav-menu{padding:105px 0 0!important;margin:0!important}
+.dabiz-sidebar .themeix-nav-menu li{display:block!important;width:100%!important}
+.dabiz-sidebar .themeix-nav-menu li a,.dabiz-sidebar .themeix-nav-menu li:nth-child(odd) a{display:flex!important;flex-direction:row!important;align-items:center;gap:16px;background:transparent!important;color:#d1dce4!important;border:0!important;box-shadow:none!important;text-transform:none!important;letter-spacing:0!important;font:500 14px/1.4 'Inter',sans-serif!important;padding:13px 26px!important}
+.dabiz-sidebar .themeix-nav-menu li a:before{display:none!important}
+.dabiz-sidebar .themeix-nav-menu li a i{position:static!important;display:inline-block!important;transform:none!important;width:18px!important;color:inherit!important;font-size:16px!important;text-align:center!important}
+.dabiz-sidebar .themeix-nav-menu li a:hover,.dabiz-sidebar .themeix-nav-menu li a:focus,.dabiz-sidebar .themeix-nav-menu li.active a{color:#fff!important;box-shadow:inset 3px 0 #1596bd!important}
+.dabiz-sidebar .dabiz-side-footer{position:static!important;margin:30px 26px 35px!important;padding:24px 0 0!important;border-top:1px solid #455562!important;background:transparent!important}
+.dabiz-sidebar .dabiz-side-footer p{color:#b9c8d1!important;font:400 13px/1.65 'Inter',sans-serif!important;margin:0 0 22px}
+.dabiz-sidebar .fixed-social-share{display:flex!important;gap:18px!important;margin:0!important;padding:0!important}
+.dabiz-sidebar .fixed-social-share li{margin:0!important}
+.dabiz-sidebar .fixed-social-share a,.dabiz-sidebar .fixed-social-share a .fa{color:#c6d6de!important;font-size:19px!important}
+#about.dabiz-landing{padding:0!important;min-height:0!important;background:#fff!important}
+.dabiz-landing .dabiz-hero{position:relative;isolation:isolate;overflow:hidden;min-height:585px;background:#eaf3f8;display:flex;align-items:center;padding:60px clamp(30px,5.5vw,100px) 110px}
+.dabiz-landing .dabiz-landscape{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:-2}
+.dabiz-landing .dabiz-watermark{position:absolute;right:2%;top:5%;width:min(40%,430px);opacity:.15;pointer-events:none;z-index:-1}
+.dabiz-landing .dabiz-hero-content{position:relative;z-index:1;width:100%;max-width:950px}
+.dabiz-landing .dabiz-lockup{display:inline-flex;align-items:center;gap:22px;margin:0 0 32px;text-decoration:none}
+.dabiz-landing .dabiz-lockup svg{width:65px;height:58px}
+.dabiz-landing .dabiz-divider{height:51px;width:1px;background:#9fb3c2}
+.dabiz-landing .dabiz-wordmark{color:var(--dabiz-ink);font:700 42px/1 'Inter',sans-serif;letter-spacing:-.065em}
+.dabiz-landing .dabiz-wordmark span{color:#1782a4;font:inherit}
+.dabiz-landing .dabiz-kicker{color:#176b89;font:700 12px/1.6 'Inter',sans-serif;letter-spacing:.22em;text-transform:uppercase;margin:0 0 25px}
+.dabiz-landing h1{color:var(--dabiz-ink)!important;font:700 clamp(37px,4.1vw,64px)/1.12 'Inter',sans-serif!important;letter-spacing:-.042em!important;margin:0 0 25px!important}
+.dabiz-landing h1 span{display:block;color:var(--dabiz-ink)!important;font:400 inherit!important;font-family:'Inter',sans-serif!important;font-weight:400!important;font-size:inherit!important;line-height:inherit!important;letter-spacing:inherit!important}
+.dabiz-landing .dabiz-description{color:#41566b!important;font:400 clamp(15px,1.15vw,18px)/1.65 'Inter',sans-serif!important;max-width:700px;margin:0 0 31px!important}
+.dabiz-landing .dabiz-description strong{color:var(--dabiz-ink)}
+.dabiz-landing .dabiz-cta{display:inline-flex;align-items:center;gap:24px;border-radius:40px;padding:14px 28px;background:var(--dabiz-blue);color:#fff!important;font:600 15px/1.3 'Inter',sans-serif;text-decoration:none;box-shadow:0 3px 8px #124b6220}
+.dabiz-landing .dabiz-cta:hover,.dabiz-landing .dabiz-cta:focus{background:#075a75;color:#fff!important}
+.dabiz-landing .dabiz-cta span{color:inherit;font:inherit}
+.dabiz-landing .dabiz-specialties{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:0;background:linear-gradient(#fff,#f8fafc);padding:45px clamp(28px,5vw,80px) 55px}
+.dabiz-landing .dabiz-specialty{padding:0 24px;border-right:1px solid #dfe9ee}
+.dabiz-landing .dabiz-specialty:first-child{padding-left:0}
+.dabiz-landing .dabiz-specialty:last-child{border-right:0;padding-right:0}
+.dabiz-landing .dabiz-specialty svg{display:block;width:39px;height:39px;margin:0 0 17px;fill:none;stroke:#087595;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.dabiz-landing .dabiz-specialty h2{color:var(--dabiz-ink)!important;font:700 17px/1.3 'Inter',sans-serif!important;letter-spacing:-.02em;margin:0 0 8px!important}
+.dabiz-landing .dabiz-specialty p{color:#53677a!important;font:400 14px/1.6 'Inter',sans-serif!important;margin:0!important}
+@media(min-width:1101px) and (max-width:1450px){
+ .dabiz-landing .dabiz-hero{padding-left:55px;min-height:535px}
+ .dabiz-landing .dabiz-specialty{padding:0 15px}
+ .dabiz-landing .dabiz-specialty h2{font-size:15px!important}
+}
+@media(max-width:1100px){
+ .dabiz-sidebar .themeix-fixed-nav{min-height:100vh}
+ .dabiz-sidebar .themeix-nav-menu{padding-top:80px!important}
+ .dabiz-sidebar .dabiz-side-footer{display:none}
+ .active-menu .dabiz-side-footer{display:block}
+ .dabiz-landing .dabiz-hero{min-height:530px;padding:55px 42px 90px}
+ .dabiz-landing .dabiz-specialties{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:30px}
+ .dabiz-landing .dabiz-specialty:nth-child(2){border-right:0}
+ .dabiz-landing .dabiz-specialty:nth-child(3){padding-left:0}
+}
+@media(max-width:767px){
+ .dabiz-landing .dabiz-hero{min-height:0;padding:42px 27px 110px}
+ .dabiz-landing .dabiz-lockup{gap:13px;margin-bottom:26px}
+ .dabiz-landing .dabiz-lockup svg{width:48px;height:44px}
+ .dabiz-landing .dabiz-divider{height:39px}
+ .dabiz-landing .dabiz-wordmark{font-size:32px}
+ .dabiz-landing .dabiz-kicker{font-size:10px;letter-spacing:.13em;margin-bottom:22px}
+ .dabiz-landing h1{font-size:clamp(30px,7vw,45px)!important}
+ .dabiz-landing .dabiz-description{font-size:15px!important}
+ .dabiz-landing .dabiz-description br{display:none}
+ .dabiz-landing .dabiz-watermark{width:70%;right:-16%;top:8%;opacity:.09}
+ .dabiz-landing .dabiz-specialties{grid-template-columns:1fr;padding:34px 28px;gap:24px}
+ .dabiz-landing .dabiz-specialty,.dabiz-landing .dabiz-specialty:first-child,.dabiz-landing .dabiz-specialty:nth-child(3),.dabiz-landing .dabiz-specialty:last-child{border:0;border-bottom:1px solid #e5edf1;padding:0 0 21px}
+ .dabiz-landing .dabiz-specialty:last-child{border:0}
+ .dabiz-landing .dabiz-specialty svg{margin-bottom:10px}
+}
+@media(prefers-reduced-motion:reduce){.dabiz-landing *{transition:none!important}}
+
+
+/* Minimal editorial hero: typography first, no photographic scenery.
+   Only the hero background changes; all other components remain untouched. */
+.dabiz-landing .dabiz-landscape{display:none!important}
+.dabiz-landing .dabiz-hero{
+  background:
+    radial-gradient(ellipse at 89% 20%,rgba(216,239,250,.42),transparent 54%),
+    linear-gradient(125deg,#f9fbfd 0%,#f3f9fc 44%,#e7f4fb 100%)!important;
+}
+.dabiz-landing .dabiz-hero::before{content:none!important;display:none!important}
+
+/* Personal introduction: retain the source photograph and intentional anonymity.
+   Exposure/highlight treatment is non-destructive (browser only). */
+#sobre-mi.dabiz-personal-section{background:#f0f5f8;padding:clamp(55px,6vw,110px) clamp(28px,6vw,105px);scroll-margin-top:16px}
+.dabiz-personal-inner{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);align-items:center;gap:clamp(35px,5vw,85px);max-width:1450px;margin:0 auto}
+.dabiz-personal-photo{position:relative;overflow:hidden;margin:0;background:#d9e5ec;box-shadow:0 14px 42px rgba(21,43,59,.12)}
+.dabiz-personal-photo img{display:block;width:100%;height:auto;aspect-ratio:735/412;object-fit:cover;object-position:51% 50%;filter:saturate(.91) brightness(.985) contrast(.98);transform:scale(1.025);transform-origin:56% center}
+.dabiz-personal-photo:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,rgba(224,239,248,.025),rgba(20,52,74,.02));pointer-events:none}
+.dabiz-personal-copy{text-align:left}
+.dabiz-personal-eyebrow{color:#18738f!important;font:700 12px/1.4 'Inter',sans-serif!important;letter-spacing:.19em;text-transform:uppercase;margin:0 0 18px!important}
+.dabiz-personal-copy h2{font:700 clamp(30px,3.2vw,48px)/1.17 'Inter',sans-serif!important;color:#172b3a!important;letter-spacing:-.035em;margin:0 0 23px!important}
+.dabiz-personal-copy p:not(.dabiz-personal-eyebrow){font:400 16px/1.8 'Inter',sans-serif!important;color:#42586b!important;margin:0 0 17px!important}
+.dabiz-personal-link{display:inline-flex;gap:14px;align-items:center;color:#126e88!important;font:600 15px/1.5 'Inter',sans-serif;text-decoration:none;border-bottom:1px solid #126e88;padding-bottom:4px;margin-top:12px}
+.dabiz-personal-link span{color:inherit}
+.dabiz-personal-link:hover{color:#142c40!important}
+@media(max-width:900px){.dabiz-personal-inner{grid-template-columns:1fr;gap:30px}.dabiz-personal-photo{max-width:740px}.dabiz-personal-copy{max-width:740px}}
+@media(max-width:767px){#sobre-mi.dabiz-personal-section{padding:50px 25px}.dabiz-personal-copy p:not(.dabiz-personal-eyebrow){font-size:15px!important}}
+
+/* Hero without repeated lockup: keep the dp watermark as brand signature. */
+.dabiz-landing .dabiz-hero {min-height:510px;padding-top:36px;padding-bottom:90px}
+.dabiz-landing .dabiz-kicker {margin-bottom:22px}
+@media (min-width:1101px) and (max-width:1450px){
+ .dabiz-landing .dabiz-hero {min-height:480px;padding-top:32px;padding-bottom:85px}
+}
+@media (max-width:1100px){
+ .dabiz-landing .dabiz-hero {min-height:460px;padding:34px 42px 85px}
+}
+@media (max-width:767px){
+ .dabiz-landing .dabiz-hero {min-height:0;padding:35px 27px 100px}
+}
+
+/* Subtle dp signature in the lower right of the homepage hero. */
+.dabiz-landing .dabiz-corner-mark {
+  position: absolute;
+  right: 34px;
+  bottom: 24px;
+  width: 70px;
+  height: auto;
+  opacity: .16;
+  pointer-events: none;
+  z-index: 0;
+}
+@media (max-width: 1100px) {
+  .dabiz-landing .dabiz-corner-mark { right: 26px; bottom: 22px; width: 59px; }
+}
+@media (max-width: 767px) {
+  .dabiz-landing .dabiz-corner-mark { right: 18px; bottom: 18px; width: 46px; opacity: .13; }
+}
+
+
+/* Hero blueprint texture: intentionally low-contrast context-diagram motif.
+   Confined to the right-hand side; existing editorial gradient and dp signature remain. */
+.dabiz-landing .dabiz-hero::before{
+  content:""!important;
+  display:block!important;
+  position:absolute;
+  inset:0 0 0 auto;
+  width:64%;
+  height:100%;
+  background:url("../images/context-blueprint.svg") no-repeat 54% center;
+  background-size:contain;
+  opacity:.105;
+  filter:none;
+  -webkit-mask-image:linear-gradient(to right,transparent 0%,transparent 29%,rgba(0,0,0,.18) 48%,rgba(0,0,0,.7) 75%,#000 93%);
+  mask-image:linear-gradient(to right,transparent 0%,transparent 29%,rgba(0,0,0,.18) 48%,rgba(0,0,0,.7) 75%,#000 93%);
+  pointer-events:none;
+  z-index:-1;
+}
+@media(max-width:767px){
+ .dabiz-landing .dabiz-hero::before{width:76%;opacity:.07;background-position:right bottom}
+}

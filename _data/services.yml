@@ -1,11 +1,15 @@
-- title: Desarrollo Backend
-  desc: Programación Java y Spring, en combinación con seguridad, colas de mensajería, bases de datos relacionales y NoSQL. Entornos distribuidos, web y Big Data.
+- title: Aplicaciones de gestión a medida
+  desc: Desarrollo de herramientas web para organizar clientes, solicitudes, trabajos y procesos internos. Soluciones proporcionadas al tamaño y necesidades de cada negocio.
   icon: assets/images/services-icon-java.png
 
-- title: Arquitectura software y diseño de componentes
-  desc: Diseño integral de soluciones de software, diseño de soluciones ad-hoc, integración con sistemas de terceros.
+- title: Integración y automatización
+  desc: Conexión de aplicaciones mediante APIs, integración de proveedores externos y automatización de operaciones para reducir tareas manuales y duplicidades.
   icon: assets/images/design2_icon.png
-  
-- title: Consultoría
-  desc: Toma de requisitos, análisis funcional, diagramas de contexto, BPMN y UML, medición de software (IFPUG, NESMA Y SNAP), EDT (Work Breakdown structure).
+
+- title: Arquitectura y evolución de software
+  desc: Diseño, revisión y modernización de aplicaciones, especialmente Java y Spring. Seguridad, integración y sistemas distribuidos cuando el proyecto lo requiere.
   icon: assets/images/project2-management.png
+
+- title: Despliegue y evolución cloud
+  desc: Preparación de aplicaciones para despliegues sencillos, automatización de entregas y operación básica con costes controlados, sin infraestructura innecesaria.
+  fa_icon: cloud
