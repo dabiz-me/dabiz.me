@@ -437,9 +437,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   background:url("../images/context-blueprint.svg") no-repeat 54% center;
   background-size:contain;
   opacity:.105;
-  filter:blur(1.4px);
-  -webkit-mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,.33) 29%,#000 85%);
-  mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,.45) 24%,#000 70%);
+  filter:none;
+  -webkit-mask-image:linear-gradient(to right,transparent 0%,transparent 29%,rgba(0,0,0,.18) 48%,rgba(0,0,0,.7) 75%,#000 93%);
+  mask-image:linear-gradient(to right,transparent 0%,transparent 29%,rgba(0,0,0,.18) 48%,rgba(0,0,0,.7) 75%,#000 93%);
   pointer-events:none;
   z-index:-1;
 }
