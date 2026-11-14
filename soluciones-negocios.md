@@ -1,21 +1,17 @@
 ---
-layout: default
+layout: service
 title: "Soluciones para negocios | David Pérez"
-description: "Digitalización, automatización e integración de herramientas para autónomos y pequeñas empresas."
+heading: "Soluciones para negocios"
+description: "Herramientas y procesos digitales proporcionados a las necesidades de autónomos y pequeñas empresas."
 permalink: /soluciones-negocios/
+audience: "Autónomos y pequeñas empresas"
+intro: "Revisamos dónde se pierde tiempo y qué procesos podrían funcionar mejor antes de decidir si hace falta desarrollar, conectar o configurar herramientas."
+needs_heading: "Menos trabajo repetitivo, más control sobre la actividad."
+offers:
+  - title: "Gestión a medida"
+    description: "Organizar solicitudes, clientes y trabajos en aplicaciones adaptadas al negocio."
+  - title: "Automatización"
+    description: "Reducir tareas repetitivas y duplicidades de información."
+  - title: "Integración de herramientas"
+    description: "Conectar aplicaciones mediante APIs y flujos sencillos cuando tenga sentido."
 ---
-<main class="themeix-main-content dabiz-detail-page">
-  <section class="full-page clearfix dabiz-v3-page" aria-labelledby="page-title">
-    <div class="container-fluid">
-      <div class="dabiz-v3-content">
-        <p class="dabiz-kicker">dabiz.me · Servicios profesionales</p>
-        <h1 id="page-title">Soluciones para negocios</h1>
-        <p class="dabiz-v3-lead">Digitalización, automatización e integración de herramientas para autónomos y pequeñas empresas.</p>
-        <p>Si tu negocio depende de tareas manuales, aplicaciones que no se comunican o procesos difíciles de controlar, podemos analizar el problema y delimitar una solución proporcionada.</p>
-        
-        <p><a class="dabiz-cta" href="{{ '/#contact' | relative_url }}">Cuéntame qué necesitas <span aria-hidden="true">→</span></a></p>
-      </div>
-    </div>
-  </section>
-  {% include footer.html %}
-</main>
