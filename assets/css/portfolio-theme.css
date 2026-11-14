@@ -423,3 +423,26 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 @media (max-width: 767px) {
   .dabiz-landing .dabiz-corner-mark { right: 18px; bottom: 18px; width: 58px; opacity: .13; }
 }
+
+
+/* Hero blueprint texture: intentionally low-contrast context-diagram motif.
+   Confined to the right-hand side; existing editorial gradient and dp signature remain. */
+.dabiz-landing .dabiz-hero::before{
+  content:""!important;
+  display:block!important;
+  position:absolute;
+  inset:0 0 0 auto;
+  width:66%;
+  height:100%;
+  background:url("../images/context-blueprint.svg") no-repeat right center;
+  background-size:contain;
+  opacity:.19;
+  filter:blur(.65px);
+  -webkit-mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,.45) 24%,#000 70%);
+  mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,.45) 24%,#000 70%);
+  pointer-events:none;
+  z-index:-1;
+}
+@media(max-width:767px){
+ .dabiz-landing .dabiz-hero::before{width:84%;opacity:.10;background-position:right bottom}
+}
