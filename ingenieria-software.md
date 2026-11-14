@@ -1,21 +1,17 @@
 ---
-layout: default
+layout: service
 title: "Ingeniería y arquitectura de software | David Pérez"
+heading: "Ingeniería y arquitectura de software"
 description: "Arquitectura, desarrollo backend e integraciones para equipos de desarrollo y empresas tecnológicas."
 permalink: /ingenieria-software/
+audience: "Empresas tecnológicas y profesionales"
+intro: "Colaboración técnica para diseñar, desarrollar y evolucionar sistemas con atención a su complejidad, seguridad y mantenimiento."
+needs_heading: "Resolver problemas técnicos con soluciones sostenibles."
+offers:
+  - title: "Arquitectura y evolución"
+    description: "Diseño y revisión de componentes, APIs y sistemas distribuidos."
+  - title: "Backend Java y Spring"
+    description: "Desarrollo de servicios y lógica de negocio con integraciones bien delimitadas."
+  - title: "Identidad e integraciones"
+    description: "OAuth2, OIDC, autorización y comunicación con servicios o proveedores externos."
 ---
-<main class="themeix-main-content dabiz-detail-page">
-  <section class="full-page clearfix dabiz-v3-page" aria-labelledby="page-title">
-    <div class="container-fluid">
-      <div class="dabiz-v3-content">
-        <p class="dabiz-kicker">dabiz.me · Servicios profesionales</p>
-        <h1 id="page-title">Ingeniería y arquitectura de software</h1>
-        <p class="dabiz-v3-lead">Arquitectura, desarrollo backend e integraciones para equipos de desarrollo y empresas tecnológicas.</p>
-        <p>Colaboración técnica en diseño y evolución de sistemas, APIs, integraciones y decisiones de arquitectura, con atención a la mantenibilidad y los condicionantes reales del proyecto.</p>
-        
-        <p><a class="dabiz-cta" href="{{ '/#contact' | relative_url }}">Cuéntame qué necesitas <span aria-hidden="true">→</span></a></p>
-      </div>
-    </div>
-  </section>
-  {% include footer.html %}
-</main>
