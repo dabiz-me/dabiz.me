@@ -1,42 +1,25 @@
-    <!-- Brand layout: vertically stacked symbol and wordmark -->
-    <style>
-      .themeix-nav-logo.dabiz-nav-logo { padding: 18px 12px 20px; text-align: center; }
-      .dabiz-nav-logo .dabiz-brand { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; width: 100%; text-decoration: none; }
-      .dabiz-nav-logo .dabiz-brand-logo { display: block; position: static; width: 88px; height: 74px; max-width: 100%; object-fit: contain; flex: none; }
-      .dabiz-nav-logo .dabiz-brand-name { display: block; margin: 0; padding: 0; font-size: 34px; line-height: 1.1; font-weight: 700; letter-spacing: -1.2px; color: #F5F7FA; }
-    </style>
-    <!-- Start Header -->
-    <header class="themeix-aside">
-        <div class="control-bar">
-            <div class="text-center">
-              <span class="menu-toggle">
-               <i class="chart"></i>
-               <i class="chart"></i>
-               <i class="chart"></i>
-              </span>
-            </div>
-        </div>
-        <div class="themeix-slide-menu menu-open navbar-scrolled">
-            <div class="themeix-fixed-nav">
-                <div class="themeix-nav-logo dabiz-nav-logo"><a class="dabiz-brand" href="{{ '/' | relative_url }}" aria-label="dabiz — inicio"><img class="dabiz-brand-logo" src="{{ '/assets/images/dabiz-logo-b.svg' | relative_url }}" alt="" aria-hidden="true" width="88" height="74"><span class="dabiz-brand-name">dabiz</span></a></div>
-                <nav>
-                    <ul class="themeix-nav-menu list-inline">
-                        <li><a href="{{ '/#about' | relative_url }}" class="btn-animated">acerca de mí<i class="icon-about"></i></a></li>
-                        <li><a href="{{ '/#skills' | relative_url }}" class="btn-animated">especialidades<i class="icon-skills"></i></a></li>
-                        <li><a href="{{ '/#services' | relative_url }}" class="btn-animated">servicios<i class="icon-services"></i></a></li>
-                        <li><a href="{{ '/#portfolio' | relative_url }}" class="btn-animated">casos<i class="icon-portfolio"></i></a></li>
-                        <li><a href="{{ '/#experiences' | relative_url }}" class="btn-animated">experiencia<i class="icon-experiences"></i></a></li>
-                        {% if site.blog %}
-                        <li><a href="{{ site.blog }}" class="btn-animated" target="_blank" rel="noopener noreferrer">blog<i class="icon-blog"></i></a></li>
-                        {% endif %}
-                        <li><a href="{{ '/#contact' | relative_url }}" class="btn-animated">contacto<i class="icon-contact"></i></a></li>
-                    </ul>
-                </nav>
-                <div class="homepage-copyright">
-                    <ul class="list-inline fixed-social-share">
-                        <li class="list-inline-item"><a href="{{ site.github_url }}" aria-label="GitHub"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </header>
+<!-- Accessible navigation: logo intentionally lives in the hero, not the sidebar. -->
+<header class="themeix-aside dabiz-sidebar">
+  <div class="control-bar"><div class="text-center"><span class="menu-toggle" role="button" tabindex="0" aria-label="Abrir menú"><i class="chart"></i><i class="chart"></i><i class="chart"></i></span></div></div>
+  <div class="themeix-slide-menu menu-open navbar-scrolled">
+    <div class="themeix-fixed-nav">
+      <nav aria-label="Navegación principal">
+        <ul class="themeix-nav-menu list-inline">
+          <li><a class="btn-animated" href="{{ '/#about' | relative_url }}"><i class="fa fa-home" aria-hidden="true"></i>Inicio</a></li>
+          <li><a class="btn-animated" href="{{ '/#services' | relative_url }}"><i class="fa fa-clone" aria-hidden="true"></i>Servicios</a></li>
+          <li><a class="btn-animated" href="{{ '/#portfolio' | relative_url }}"><i class="fa fa-code" aria-hidden="true"></i>Proyectos</a></li>
+          <li><a class="btn-animated" href="{{ '/#experiences' | relative_url }}"><i class="fa fa-user" aria-hidden="true"></i>Sobre mí</a></li>
+          {% if site.blog %}<li><a class="btn-animated" href="{{ site.blog }}" target="_blank" rel="noopener noreferrer"><i class="fa fa-pencil" aria-hidden="true"></i>Blog</a></li>{% endif %}
+          <li><a class="btn-animated" href="{{ '/#contact' | relative_url }}"><i class="fa fa-envelope" aria-hidden="true"></i>Contacto</a></li>
+        </ul>
+      </nav>
+      <div class="homepage-copyright dabiz-side-footer">
+        <p>Arquitectura de software<br>y desarrollo backend.</p>
+        <ul class="list-inline fixed-social-share">
+          <li class="list-inline-item"><a href="{{ site.github_url }}" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+          <li class="list-inline-item"><a href="{{ '/#contact' | relative_url }}" aria-label="Contacto"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</header>

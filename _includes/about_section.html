@@ -1,32 +1,23 @@
-<!-- Start About -->
-<section class="full-page clearfix" id="about">
-    <div class="about">
-        <div class="container-fluid">
-            <div class="about-wrapper">
-                <div class="row d-flex align-items-center">
-                    <div class="col-lg-6">
-                        <div class="about-content">
-                            <h1><span>Soy</span> David Pérez</h1>
-                            <h4>Arquitectura y desarrollo de software</h4>
-                            <p>Ayudo a empresas a desarrollar y mejorar sus aplicaciones, conectar sistemas y automatizar procesos de negocio.</p>
-                            <p>Combino experiencia en arquitectura de software, desarrollo backend y dirección técnica, con especialización en Java/Spring, integración de APIs, identidad y seguridad, y sistemas distribuidos.</p>
-                            <p>Creo en aplicar la arquitectura adecuada a cada problema: desde una herramienta de gestión sencilla hasta una plataforma empresarial compleja, prestando atención al coste de desarrollo, despliegue y mantenimiento.</p>
-                            <div class="clearfix">
-                                <ul class="list-inline home-social-share float-left">
-                                    <li class="list-inline-item"><a href="{{site.github_url}}" aria-label="GitHub" target="_blank" rel="noopener noreferrer"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-                                </ul>
-                                <a href="#contact" class="home-cv-btn btn btn-link float-right">Hablemos de tu proyecto <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-6">
-                        <div class="profile-img">
-                            <img class="img-fluid" src="{{'/assets/images/author.png' | relative_url}}" alt="Fotografía de David Pérez">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+<!-- Homepage hero: semantic, responsive, with vector scenery and original dp monogram. -->
+<section class="full-page clearfix dabiz-landing" id="about" aria-label="Presentación">
+  <div class="dabiz-hero">
+    <svg class="dabiz-landscape" viewBox="0 0 1500 620" preserveAspectRatio="xMidYMax slice" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sky" x1="0" y1="0" x2=".8" y2="1"><stop stop-color="#f5f9fb"/><stop offset=".7" stop-color="#e9f3f9"/><stop offset="1" stop-color="#b3d4e4"/></linearGradient><linearGradient id="water" x1="0" x2="0" y1="0" y2="1"><stop stop-color="#e6f4f8"/><stop offset="1" stop-color="#bddae7"/></linearGradient></defs><rect width="1500" height="620" fill="url(#sky)"/><path d="M0 515 220 493 390 501 560 471 700 492 855 443 960 464 1068 396 1170 412 1270 350 1370 365 1500 286V620H0Z" fill="#c0d8e6" opacity=".55"/><path d="M0 548 320 517 495 522 670 486 820 504 960 441 1032 455 1160 401 1260 415 1380 345 1500 367V620H0Z" fill="#95bfd5" opacity=".62"/><path d="M0 558 500 551 760 560 900 547 1040 565 1190 550 1500 557V620H0Z" fill="url(#water)"/><path d="M670 602 845 575 970 585 1125 545 1270 563 1420 508 1500 501V620H670Z" fill="#6c9db7" opacity=".54"/><path d="M910 620 1030 591 1120 603 1230 560 1330 575 1440 514 1500 523V620Z" fill="#4e819e" opacity=".53"/><path d="M0 585Q460 579 740 588T1500 580" stroke="#fff" stroke-width="2" fill="none" opacity=".48"/></svg>
+    <svg class="dabiz-watermark" viewBox="18 20 174 146" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path fill="#1782a4" fill-rule="evenodd" d="M145 33a43 43 0 1 1 0 86a43 43 0 1 1 0-86Zm0 19a24 24 0 1 0 0 48a24 24 0 1 0 0-48Z"/><path fill="#1782a4" d="M102 76h19v81h-19z"/><path fill="#142738" fill-rule="evenodd" d="M67 65a43 43 0 1 1 0 86a43 43 0 1 1 0-86Zm0 19a24 24 0 1 0 0 48a24 24 0 1 0 0-48Z"/><path fill="#142738" d="M91 41l19-16v83H91z"/></svg>
+    <div class="dabiz-hero-content">
+      <a class="dabiz-lockup" href="{{ '/' | relative_url }}" aria-label="dabiz — inicio">
+        <svg viewBox="18 20 174 146" aria-hidden="true" xmlns="http://www.w3.org/2000/svg"><path fill="#1782a4" fill-rule="evenodd" d="M145 33a43 43 0 1 1 0 86a43 43 0 1 1 0-86Zm0 19a24 24 0 1 0 0 48a24 24 0 1 0 0-48Z"/><path fill="#1782a4" d="M102 76h19v81h-19z"/><path fill="#142738" fill-rule="evenodd" d="M67 65a43 43 0 1 1 0 86a43 43 0 1 1 0-86Zm0 19a24 24 0 1 0 0 48a24 24 0 1 0 0-48Z"/><path fill="#142738" d="M91 41l19-16v83H91z"/></svg>
+        <span class="dabiz-divider" aria-hidden="true"></span><span class="dabiz-wordmark">dabiz<span>.</span></span>
+      </a>
+      <p class="dabiz-kicker">Arquitectura · Backend · Integraciones</p>
+      <h1>Software bien diseñado.<span>Soluciones que funcionan.</span></h1>
+      <p class="dabiz-description">Soy <strong>David Pérez</strong>. Arquitecto de software y desarrollador backend.<br>Ayudo a empresas a diseñar, desarrollar e integrar sistemas robustos, escalables y alineados con sus objetivos de negocio.</p>
+      <a class="dabiz-cta" href="#contact">Hablemos de tu proyecto <span aria-hidden="true">→</span></a>
     </div>
+  </div>
+  <div class="dabiz-specialties" aria-label="Especialidades">
+    <article class="dabiz-specialty"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="m12 7-9 9 9 9M20 7l9 9-9 9M18 4l-5 24"/></svg><h2>Desarrollo backend</h2><p>APIs, microservicios, Spring Boot y arquitecturas modernas.</p></article>
+    <article class="dabiz-specialty"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M8 25h17a6 6 0 0 0 0-12 9 9 0 0 0-17-2 7 7 0 0 0 0 14Z"/></svg><h2>Cloud &amp; DevOps</h2><p>Kubernetes, Docker, Terraform, GitOps y despliegues automatizados.</p></article>
+    <article class="dabiz-specialty"><svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3 28 7v8c0 7-4.3 11.2-12 14C8.3 26.2 4 22 4 15V7L16 3Z"/></svg><h2>Seguridad e identidad</h2><p>OAuth2/OIDC, JWT, PKI, control de acceso y buenas prácticas.</p></article>
+    <article class="dabiz-specialty"><svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="7" cy="16" r="4"/><circle cx="25" cy="7" r="4"/><circle cx="25" cy="25" r="4"/><path d="m11 14 10-5m-10 9 10 5"/></svg><h2>Integraciones</h2><p>Sistemas de terceros, eventos, mensajería y arquitectura orientada a servicios.</p></article>
+  </div>
 </section>
-<!-- End About -->
