@@ -12,7 +12,7 @@ permalink: /proyectos-y-casos/
         <h1 id="page-title">Proyectos y casos</h1>
         <p class="dabiz-v3-lead">Casos profesionales de arquitectura, integración y desarrollo de software.</p>
         <p>Los casos profesionales disponibles explican problemas técnicos y decisiones de solución sin divulgar información confidencial.</p>
-        <p>[Ver casos profesionales]({{ '/#portfolio' | relative_url }})</p>
+        <p><a href="{{ '/#portfolio' | relative_url }}">Ver casos profesionales</a></p>
         <p><a class="dabiz-cta" href="{{ '/#contact' | relative_url }}">Cuéntame qué necesitas <span aria-hidden="true">→</span></a></p>
       </div>
     </div>
