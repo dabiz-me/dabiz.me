@@ -411,17 +411,17 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   position: absolute;
   right: 34px;
   bottom: 24px;
-  width: 88px;
+  width: 70px;
   height: auto;
   opacity: .16;
   pointer-events: none;
   z-index: 0;
 }
 @media (max-width: 1100px) {
-  .dabiz-landing .dabiz-corner-mark { right: 26px; bottom: 22px; width: 74px; }
+  .dabiz-landing .dabiz-corner-mark { right: 26px; bottom: 22px; width: 59px; }
 }
 @media (max-width: 767px) {
-  .dabiz-landing .dabiz-corner-mark { right: 18px; bottom: 18px; width: 58px; opacity: .13; }
+  .dabiz-landing .dabiz-corner-mark { right: 18px; bottom: 18px; width: 46px; opacity: .13; }
 }
 
 
@@ -432,7 +432,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   display:block!important;
   position:absolute;
   inset:0 0 0 auto;
-  width:66%;
+  width:60%;
   height:100%;
   background:url("../images/context-blueprint.svg") no-repeat right center;
   background-size:contain;
@@ -444,5 +444,5 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   z-index:-1;
 }
 @media(max-width:767px){
- .dabiz-landing .dabiz-hero::before{width:84%;opacity:.10;background-position:right bottom}
+ .dabiz-landing .dabiz-hero::before{width:76%;opacity:.10;background-position:right bottom}
 }
