@@ -364,3 +364,33 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
  .dabiz-landing .dabiz-specialty svg{margin-bottom:10px}
 }
 @media(prefers-reduced-motion:reduce){.dabiz-landing *{transition:none!important}}
+
+
+/*
+ * Homepage photographic scenery (Unsplash / Zhang liven).
+ * https://unsplash.com/photos/misty-blue-mountains-rise-above-calm-water-BiLh-YznD0I
+ * Licensed under Unsplash License for commercial use.
+ * The previous geometric mountains are deliberately hidden.
+ * This image is served by Unsplash CDN; no screenshot is used as page content.
+ */
+.dabiz-landing .dabiz-landscape{display:none!important}
+.dabiz-landing .dabiz-hero{
+  background:#ecf5fa!important;
+}
+.dabiz-landing .dabiz-hero::before{
+  content:"";
+  position:absolute;
+  inset:auto 0 0;
+  height:57%;
+  background-image:
+    linear-gradient(to bottom,#ecf5fa 0%,rgba(236,245,250,.94) 13%,rgba(236,245,250,.57) 39%,rgba(236,245,250,.12) 78%),
+    url("https://images.unsplash.com/photo-1766811474703-6e86727d7f95?auto=format&fit=crop&w=1920&q=78");
+  background-size:cover;
+  background-position:center 47%;
+  pointer-events:none;
+  z-index:-2;
+}
+.dabiz-landing .dabiz-watermark{z-index:-1}
+@media(max-width:767px){
+ .dabiz-landing .dabiz-hero::before{height:48%;background-position:50% 45%}
+}
