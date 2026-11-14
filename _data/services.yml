@@ -1,15 +1,15 @@
 - title: Aplicaciones de gestión a medida
   desc: Desarrollo de herramientas web para organizar clientes, solicitudes, trabajos y procesos internos. Soluciones proporcionadas al tamaño y necesidades de cada negocio.
-  icon: assets/images/services-icon-java.png
+  icon: assets/images/service-application-window.svg
 
 - title: Integración y automatización
   desc: Conexión de aplicaciones mediante APIs, integración de proveedores externos y automatización de operaciones para reducir tareas manuales y duplicidades.
-  icon: assets/images/design2_icon.png
+  icon: assets/images/service-connected-components.svg
 
 - title: Arquitectura y evolución de software
   desc: Diseño, revisión y modernización de aplicaciones, especialmente Java y Spring. Seguridad, integración y sistemas distribuidos cuando el proyecto lo requiere.
-  icon: assets/images/project2-management.png
+  icon: assets/images/service-architecture-blocks.svg
 
 - title: Despliegue y evolución cloud
   desc: Preparación de aplicaciones para despliegues sencillos, automatización de entregas y operación básica con costes controlados, sin infraestructura innecesaria.
-  fa_icon: cloud
+  icon: assets/images/service-cloud-deploy.svg
