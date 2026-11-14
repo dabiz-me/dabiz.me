@@ -446,3 +446,32 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 @media(max-width:767px){
  .dabiz-landing .dabiz-hero::before{width:76%;opacity:.07;background-position:right bottom}
 }
+
+/* V2: commercial journey and flexible professional-case cards. */
+.dabiz-landing .dabiz-hero{padding-bottom:clamp(52px,6vw,90px)}
+.dabiz-landing .dabiz-description{max-width:740px}
+.dabiz-landing .dabiz-description:not(.dabiz-description-detail){margin-bottom:10px!important}
+.dabiz-landing .dabiz-description-detail{margin-bottom:30px!important}
+.dabiz-sidebar .themeix-nav-menu li a{min-width:0;white-space:normal;overflow-wrap:normal;gap:12px!important;padding-left:22px!important;padding-right:12px!important}
+.dabiz-sidebar .themeix-nav-menu li a i{flex:0 0 18px}
+#portfolio .row{align-items:stretch}
+#portfolio .dabiz-case-column{display:flex;min-width:0;margin-bottom:30px}
+#portfolio .dabiz-case-card{display:flex;flex-direction:column;align-items:center;width:100%;height:100%;margin-bottom:0}
+#portfolio .dabiz-case-card h5{margin-top:0}
+#portfolio .dabiz-case-card p{width:100%;margin-bottom:14px}
+#portfolio .dabiz-case-card .dabiz-case-tags{margin-top:auto;margin-bottom:12px}
+#portfolio .dabiz-case-card .btn-link{margin-top:0;align-self:center}
+#collaboration{background:var(--brand-surface)}
+#collaboration .dabiz-collaboration{padding:clamp(55px,6vw,95px) clamp(25px,5vw,80px)}
+#collaboration .dabiz-collaboration-inner{max-width:1250px;margin:0 auto}
+#collaboration .dabiz-collaboration-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;margin-top:38px;text-align:left}
+#collaboration .dabiz-collaboration-step{min-width:0;padding:25px 24px;border:1px solid var(--brand-border);background:#fff}
+#collaboration .dabiz-collaboration-step h3{font-size:19px;line-height:1.4;margin:0 0 14px}
+#collaboration .dabiz-collaboration-step p{margin:0;line-height:1.7}
+@media(max-width:767px){
+ .dabiz-landing .dabiz-hero{padding-bottom:65px}
+ #portfolio .dabiz-case-column{display:block;margin-bottom:22px}
+ #portfolio .dabiz-case-card{height:auto}
+ #collaboration .dabiz-collaboration-grid{grid-template-columns:1fr;gap:16px;margin-top:26px}
+ #collaboration .dabiz-collaboration-step{padding:22px}
+}
