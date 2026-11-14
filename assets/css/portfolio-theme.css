@@ -432,17 +432,17 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   display:block!important;
   position:absolute;
   inset:0 0 0 auto;
-  width:60%;
+  width:64%;
   height:100%;
-  background:url("../images/context-blueprint.svg") no-repeat right center;
+  background:url("../images/context-blueprint.svg") no-repeat 54% center;
   background-size:contain;
-  opacity:.19;
-  filter:blur(.65px);
-  -webkit-mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,.45) 24%,#000 70%);
+  opacity:.105;
+  filter:blur(1.4px);
+  -webkit-mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,.33) 29%,#000 85%);
   mask-image:linear-gradient(to right,transparent 0%,rgba(0,0,0,.45) 24%,#000 70%);
   pointer-events:none;
   z-index:-1;
 }
 @media(max-width:767px){
- .dabiz-landing .dabiz-hero::before{width:76%;opacity:.10;background-position:right bottom}
+ .dabiz-landing .dabiz-hero::before{width:76%;opacity:.07;background-position:right bottom}
 }
