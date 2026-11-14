@@ -412,3 +412,16 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .dabiz-personal-link:hover{color:#142c40!important}
 @media(max-width:900px){.dabiz-personal-inner{grid-template-columns:1fr;gap:30px}.dabiz-personal-photo{max-width:740px}.dabiz-personal-copy{max-width:740px}}
 @media(max-width:767px){#sobre-mi.dabiz-personal-section{padding:50px 25px}.dabiz-personal-copy p:not(.dabiz-personal-eyebrow){font-size:15px!important}}
+
+/* Hero without repeated lockup: keep the dp watermark as brand signature. */
+.dabiz-landing .dabiz-hero {min-height:510px;padding-top:36px;padding-bottom:90px}
+.dabiz-landing .dabiz-kicker {margin-bottom:22px}
+@media (min-width:1101px) and (max-width:1450px){
+ .dabiz-landing .dabiz-hero {min-height:480px;padding-top:32px;padding-bottom:85px}
+}
+@media (max-width:1100px){
+ .dabiz-landing .dabiz-hero {min-height:460px;padding:34px 42px 85px}
+}
+@media (max-width:767px){
+ .dabiz-landing .dabiz-hero {min-height:0;padding:35px 27px 100px}
+}
