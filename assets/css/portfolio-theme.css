@@ -564,3 +564,65 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 @media (prefers-reduced-motion: reduce) {
   .themeix-aside.dabiz-sidebar { transition: none; }
 }
+
+/* V5.1.4: about-page-only adjustments; shared landing components remain unchanged. */
+.dabiz-about-page .dabiz-personal-section {
+  padding: clamp(42px,5vw,76px) clamp(20px,5vw,80px);
+  background: #f0f5f8;
+}
+.dabiz-about-page .dabiz-personal-inner {
+  align-items: start;
+  grid-template-columns: minmax(0,.9fr) minmax(0,1.1fr);
+}
+.dabiz-about-page .dabiz-personal-photo { margin-top: 8px; }
+.dabiz-about-page .dabiz-personal-copy { min-width: 0; }
+.dabiz-about-page .dabiz-personal-copy h3 {
+  font-size: 19px;
+  line-height: 1.4;
+  margin: 26px 0 8px;
+}
+.dabiz-about-page .dabiz-personal-copy h2 + h3 { margin-top: 0; }
+.dabiz-about-page #experiences .experiences-info .experiences-info-wrapper {
+  padding: 22px 24px;
+  margin-bottom: 18px;
+  text-align: left;
+}
+.dabiz-about-page #experiences .experiences-info .work-history-img { margin-bottom: 12px; }
+.dabiz-about-page #experiences .experiences-info .academic-logo {
+  max-width: 115px !important;
+  max-height: 36px !important;
+}
+.dabiz-about-page #experiences .experiences-info .experiences-datetime {
+  position: static;
+  display: block;
+  margin: 0 0 8px;
+  font-size: 13px;
+}
+.dabiz-about-page #experiences .experiences-info .experiences-datetime::before {
+  display: none;
+}
+.dabiz-about-page #experiences .experiences-info h3 {
+  margin: 0 0 6px;
+  font-size: 18px;
+  line-height: 1.4;
+}
+.dabiz-about-page #experiences .experiences-info span,
+.dabiz-about-page #experiences .experiences-info p {
+  display: block;
+  padding: 0;
+  margin: 0 0 7px;
+  font-size: 14px;
+  line-height: 1.6;
+  overflow-wrap: anywhere;
+}
+@media(max-width:900px) {
+  .dabiz-about-page .dabiz-personal-inner { grid-template-columns: 1fr; }
+  .dabiz-about-page .dabiz-personal-photo { max-width: 620px; margin-top: 0; }
+}
+@media(max-width:767px) {
+  .dabiz-about-page .dabiz-personal-section { padding: 40px 20px; }
+  .dabiz-about-page .dabiz-personal-copy h3 { font-size: 18px; }
+  .dabiz-about-page #experiences .experiences-info .experiences-info-wrapper {
+    padding: 18px;
+  }
+}
