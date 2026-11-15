@@ -504,3 +504,13 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .dabiz-audience-more,.dabiz-services-index-link{margin-top:15px}
 .dabiz-audience-more a,.dabiz-services-index-link a{color:var(--brand-accent-dark);font-weight:600}
 @media(max-width:767px){.dabiz-detail-page .dabiz-service-hero{padding:42px 18px}.dabiz-detail-page .dabiz-service-details{padding:40px 10px}.dabiz-detail-page .dabiz-service-column{display:block;margin-bottom:17px}.dabiz-detail-page .dabiz-service-card{height:auto;padding:28px 19px}.dabiz-detail-page .dabiz-service-hero .about-content{padding:0}}
+
+/* V3.1: preserve V2.1 skill cards while restoring technical presence on the landing. */
+.dabiz-technical-link{padding:0 22px 44px;background:var(--brand-white);}
+.dabiz-technical-link a{color:var(--brand-accent-dark);font-weight:600;text-decoration:underline;text-underline-offset:4px;}
+.dabiz-audiences .dabiz-audience-column{display:flex;}
+.dabiz-audiences .dabiz-audience-column .services-box{display:flex;flex-direction:column;align-items:center;width:100%;}
+.dabiz-audiences .dabiz-audience-column .services-box a{margin-top:auto;color:var(--brand-accent-dark);font-weight:600;}
+.dabiz-audiences .dabiz-audience-icon.services-box-logo{width:64px;height:64px;min-width:64px;display:flex;align-items:center;justify-content:center;position:static;float:none;margin:0 auto 22px;border-radius:50%;background:var(--brand-white);}
+.dabiz-audiences .dabiz-audience-icon .fa{font-size:27px;line-height:1;color:var(--brand-accent-dark);}
+@media(max-width:767px){.dabiz-technical-link{padding:0 20px 35px}.dabiz-audiences .dabiz-audience-icon.services-box-logo{width:58px;height:58px;min-width:58px;}}
