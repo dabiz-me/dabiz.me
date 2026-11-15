@@ -2,16 +2,21 @@
 layout: service
 title: "Ingeniería y arquitectura de software | David Pérez"
 heading: "Ingeniería y arquitectura de software"
-description: "Arquitectura, desarrollo backend e integraciones para equipos de desarrollo y empresas tecnológicas."
+description: "Arquitectura, desarrollo backend e integraciones para equipos de desarrollo, consultoras y empresas tecnológicas."
 permalink: /ingenieria-software/
 audience: "Empresas tecnológicas y profesionales"
-intro: "Colaboración técnica para diseñar, desarrollar y evolucionar sistemas con atención a su complejidad, seguridad y mantenimiento."
-needs_heading: "Resolver problemas técnicos con soluciones sostenibles."
+intro: "Colaboro en el diseño, desarrollo y evolución de aplicaciones empresariales. El trabajo comienza por comprender las restricciones y termina en decisiones técnicas, implementaciones o entregables concretos y revisables."
+needs_heading: "¿Dónde necesitas apoyo técnico?"
+needs_intro: "Estas son seis áreas conectadas, pero con problemas y posibles intervenciones diferentes."
+engineering_areas: true
 offers:
   - title: "Arquitectura y evolución"
-    description: "Diseño y revisión de componentes, APIs y sistemas distribuidos."
-  - title: "Backend Java y Spring"
-    description: "Desarrollo de servicios y lógica de negocio con integraciones bien delimitadas."
-  - title: "Identidad e integraciones"
-    description: "OAuth2, OIDC, autorización y comunicación con servicios o proveedores externos."
+    icon: "cubes"
+    description: "Separar responsabilidades, controlar la complejidad y evolucionar sistemas existentes."
+  - title: "Backend e identidad"
+    icon: "code"
+    description: "Desarrollar servicios Java/Spring y definir mecanismos de autenticación y autorización."
+  - title: "Integración y operación"
+    icon: "exchange"
+    description: "Conectar sistemas, gestionar flujos distribuidos y mejorar despliegues y observabilidad."
 ---
