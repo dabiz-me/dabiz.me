@@ -9,7 +9,7 @@
       <h2 id="dabiz-personal-heading">Soy David Pérez.</h2>
       <p>Mi trabajo consiste en convertir necesidades reales en soluciones de software útiles y sostenibles. Combino arquitectura, desarrollo backend e integración de sistemas con una mirada práctica sobre los costes y el mantenimiento.</p>
       <p>Me interesa entender el problema antes de elegir la tecnología. A veces hace falta diseñar una plataforma compleja; otras, resolver algo concreto con sencillez.</p>
-      <a href="#experiences" class="dabiz-personal-link">Conoce mi trayectoria <span aria-hidden="true">→</span></a>
+      {% unless page.url == '/sobre-mi/' %}<a href="{{ '/sobre-mi/' | relative_url }}" class="dabiz-personal-link">Más sobre mí <span aria-hidden="true">→</span></a>{% endunless %}
     </div>
   </div>
 </section>

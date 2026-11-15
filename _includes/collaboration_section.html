@@ -21,6 +21,9 @@
           <p>Ejecutamos lo acordado, revisamos la entrega y valoramos los siguientes pasos si tienen sentido.</p>
         </article>
       </div>
+      {% unless page.url == '/como-trabajo/' %}
+      <p class="text-center dabiz-collaboration-more"><a class="dabiz-personal-link" href="{{ '/como-trabajo/' | relative_url }}">Conoce cómo trabajo <span aria-hidden="true">→</span></a></p>
+      {% endunless %}
     </div>
   </div>
 </section>
