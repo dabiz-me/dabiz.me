@@ -18,6 +18,13 @@ permalink: /sobre-mi/
   {% include personal_section.html %}
   {% include skills_section.html %}
   {% include experiences_section.html %}
+  <section class="full-page clearfix dabiz-service-process" aria-labelledby="professional-services-title">
+    <div class="container-fluid"><div class="dabiz-collaboration-inner text-center">
+      <div class="section-title"><div class="border-center"></div><h2 id="professional-services-title">Servicios de ingeniería</h2><div class="border-center"></div></div>
+      <p>La trayectoria y las especialidades anteriores respaldan intervenciones en arquitectura, backend, identidad, integraciones y evolución de sistemas.</p>
+      <p><a class="dabiz-service-link" href="{{ '/ingenieria-software/' | relative_url }}">Conoce mis servicios de ingeniería y arquitectura de software <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></p>
+    </div></div>
+  </section>
   <section class="full-page clearfix dabiz-service-outro" aria-labelledby="about-contact-title">
     <div class="container-fluid text-center">
       <h2 id="about-contact-title">¿Hablamos de tu proyecto?</h2>
