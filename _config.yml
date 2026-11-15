@@ -25,3 +25,10 @@ plugins:
   - jekyll-archives
   - jekyll-seo-tag
   - jekyll-sitemap
+
+# Keep the CV downloadable, but exclude the static PDF from the 8-page sitemap.
+defaults:
+  - scope:
+      path: "assets/documents/20210630CV.pdf"
+    values:
+      sitemap: false
