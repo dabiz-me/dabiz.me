@@ -520,3 +520,15 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .dabiz-audiences .dabiz-audience-column .services-box h3{line-height:1.4;margin-bottom:16px;}
 .dabiz-audiences .dabiz-audience-column .services-box p{line-height:1.7;}
 @media(max-width:767px){.dabiz-audiences .dabiz-audience-icon svg{width:27px;height:27px;}}
+
+/* Case cards: keep spacing inside the Bootstrap row so the following CTA
+   cannot overlap the card boxes at any breakpoint. */
+#portfolio .dabiz-case-column{margin-bottom:0;padding-bottom:30px;}
+#portfolio .dabiz-case-card{height:100%;}
+#portfolio .dabiz-case-more{clear:both;margin:10px 0 0;padding:12px 0 0;}
+#portfolio .dabiz-case-more a{display:inline-block;color:var(--brand-accent-dark);font-weight:600;text-decoration:underline;text-underline-offset:4px;}
+@media(max-width:767px){
+  #portfolio .dabiz-case-column{margin-bottom:0;padding-bottom:22px;}
+  #portfolio .dabiz-case-card{height:100%;}
+  #portfolio .dabiz-case-more{margin-top:4px;}
+}
