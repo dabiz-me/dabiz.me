@@ -16,6 +16,9 @@ markdown: kramdown
 theme: minima
 exclude:
   - docs/editorial/
+  # Legacy demo content: keep files in Git, never publish them.
+  - _posts/
+  - about.md
 
 plugins:
   - jekyll-feed
