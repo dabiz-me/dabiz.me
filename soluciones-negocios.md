@@ -9,9 +9,12 @@ intro: "Revisamos dónde se pierde tiempo y qué procesos podrían funcionar mej
 needs_heading: "Menos trabajo repetitivo, más control sobre la actividad."
 offers:
   - title: "Gestión a medida"
+    icon: "list-alt"
     description: "Organizar solicitudes, clientes y trabajos en aplicaciones adaptadas al negocio."
   - title: "Automatización"
+    icon: "cogs"
     description: "Reducir tareas repetitivas y duplicidades de información."
   - title: "Integración de herramientas"
+    icon: "exchange"
     description: "Conectar aplicaciones mediante APIs y flujos sencillos cuando tenga sentido."
 ---
