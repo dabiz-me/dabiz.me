@@ -2,9 +2,32 @@
   "use strict";
 
   function menu_switch() {
-    $(".control-bar").on("click", function(e) {
-      e.preventDefault();
-      $(".themeix-aside").toggleClass("active-menu");
+    var $sidebar = $(".themeix-aside.dabiz-sidebar");
+    var $toggle = $(".dabiz-menu-button");
+    if (!$sidebar.length || !$toggle.length) return;
+
+    function setOpen(open, restoreFocus) {
+      $sidebar.toggleClass("active-menu", open);
+      $toggle.attr("aria-expanded", String(open));
+      $toggle.attr("aria-label", open ? "Cerrar menú" : "Abrir menú");
+      if (restoreFocus) $toggle.trigger("focus");
+    }
+
+    $toggle.on("click", function() {
+      setOpen(!$sidebar.hasClass("active-menu"), false);
+    });
+    $(document).on("keydown", function(event) {
+      if (event.key === "Escape" && $sidebar.hasClass("active-menu")) {
+        setOpen(false, true);
+      }
+    });
+    $sidebar.find("nav a").on("click", function() {
+      setOpen(false, false);
+    });
+    $(window).on("resize", function() {
+      if (window.innerWidth > 1100 && $sidebar.hasClass("active-menu")) {
+        setOpen(false, false);
+      }
     });
   }
   menu_switch();

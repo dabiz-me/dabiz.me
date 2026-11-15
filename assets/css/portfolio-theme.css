@@ -532,3 +532,35 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   #portfolio .dabiz-case-card{height:100%;}
   #portfolio .dabiz-case-more{margin-top:4px;}
 }
+
+/* V4.1: mobile navigation toggle must not be clipped by the scrollable sidebar. */
+@media (max-width: 1100px) {
+  .dabiz-menu-button {
+    display: block;
+    position: fixed;
+    top: 12px;
+    left: 12px;
+    right: auto;
+    z-index: 1200;
+    width: 48px;
+    height: 48px;
+    padding: 0;
+    border: 1px solid rgba(255,255,255,.35);
+    border-radius: 4px;
+    background: var(--dabiz-navy, #1d2a36);
+    color: #fff;
+    box-shadow: 0 2px 10px rgba(0,0,0,.2);
+  }
+  .dabiz-menu-button .menu-toggle { display: block; padding: 13px 12px; margin: 0; }
+  .dabiz-menu-button .chart { display: block; width: 22px; height: 2px; margin-bottom: 5px; background: #fff; }
+  .dabiz-menu-button .chart:last-child { margin-bottom: 0; }
+  .dabiz-menu-button:focus-visible { outline: 3px solid #1596bd !important; outline-offset: 3px; }
+  .themeix-aside.dabiz-sidebar { left: -200px; visibility: hidden; transition: left .25s ease, visibility .25s; }
+  .themeix-aside.dabiz-sidebar.active-menu { left: 0; visibility: visible; }
+  .themeix-main-content { padding-left: 0; }
+  .dabiz-sidebar .themeix-nav-menu { padding-top: 85px !important; }
+}
+@media (min-width: 1101px) { .dabiz-menu-button { display: none !important; } }
+@media (prefers-reduced-motion: reduce) {
+  .themeix-aside.dabiz-sidebar { transition: none; }
+}
