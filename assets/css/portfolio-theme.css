@@ -514,3 +514,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .dabiz-audiences .dabiz-audience-icon.services-box-logo{width:64px;height:64px;min-width:64px;display:flex;align-items:center;justify-content:center;position:static;float:none;margin:0 auto 22px;border-radius:50%;background:var(--brand-white);}
 .dabiz-audiences .dabiz-audience-icon .fa{font-size:27px;line-height:1;color:var(--brand-accent-dark);}
 @media(max-width:767px){.dabiz-technical-link{padding:0 20px 35px}.dabiz-audiences .dabiz-audience-icon.services-box-logo{width:58px;height:58px;min-width:58px;}}
+
+/* V3.1 service cards: align inline line icons with the existing Tfolio icon frames. */
+.dabiz-audiences .dabiz-audience-icon svg{display:block;width:29px;height:29px;stroke:var(--brand-accent-dark);flex:none;}
+.dabiz-audiences .dabiz-audience-column .services-box h3{line-height:1.4;margin-bottom:16px;}
+.dabiz-audiences .dabiz-audience-column .services-box p{line-height:1.7;}
+@media(max-width:767px){.dabiz-audiences .dabiz-audience-icon svg{width:27px;height:27px;}}
