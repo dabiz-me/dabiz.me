@@ -31,6 +31,7 @@ layout: default
             {% for item in page.offers %}
             <div class="col-lg-4 col-md-6 dabiz-service-column">
               <article class="services-box text-center dabiz-service-card">
+                {% if item.icon %}<div class="services-box-logo dabiz-service-icon" aria-hidden="true"><i class="fa fa-{{ item.icon }}" aria-hidden="true"></i></div>{% endif %}
                 <h3>{{ item.title }}</h3><p>{{ item.description }}</p>
               </article>
             </div>
@@ -40,6 +41,9 @@ layout: default
       </div>
     </div>
   </section>
+  {% if page.engineering_areas %}
+  {% include engineering_areas.html %}
+  {% endif %}
   <section class="full-page clearfix dabiz-service-process" aria-labelledby="process-title">
     <div class="container-fluid">
       <div class="dabiz-collaboration-inner">
