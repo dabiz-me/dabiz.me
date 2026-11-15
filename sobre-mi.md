@@ -15,14 +15,14 @@ permalink: /sobre-mi/
       <p>Sigo considerando el conocimiento técnico y la cercanía al código esenciales para tomar buenas decisiones de arquitectura.</p>
     </div></div></div></div></div>
   </section>
-  <section class="dabiz-personal-section" aria-label="Fotografía personal">
+  <section class="dabiz-personal-section" aria-labelledby="engineering-approach-title">
     <div class="dabiz-personal-inner">
       <figure class="dabiz-personal-photo">
         <img src="{{ '/assets/images/author.png' | relative_url }}" alt="Autorretrato en contraluz de David Pérez, con el mar de Barcelona al fondo" loading="lazy" decoding="async">
       </figure>
       <div class="dabiz-personal-copy">
         <p class="dabiz-personal-eyebrow">Mi forma de trabajar</p>
-        <h2>Cómo entiendo la ingeniería de software</h2>
+        <h2 id="engineering-approach-title">Cómo entiendo la ingeniería de software</h2>
         <h3>Comprender antes de diseñar</h3>
         <p>Antes de elegir una tecnología o definir una arquitectura, necesito entender qué problema queremos resolver, cuáles son sus restricciones y qué consecuencias tendrá cada decisión.</p>
         <h3>La arquitectura también tiene un coste</h3>
