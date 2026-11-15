@@ -26,7 +26,7 @@ permalink: /servicios/
   <section class="full-page clearfix dabiz-service-process">
     <div class="container-fluid"><div class="dabiz-collaboration-inner text-center"><div class="section-title"><div class="border-center"></div><h2>Una forma de colaborar clara</h2><div class="border-center"></div></div>
       <p>Entender la necesidad, delimitar una primera intervención y revisar el resultado.</p>
-      <p><a class="dabiz-service-link" href="{{ '/como-trabajo/' | relative_url }}">Cómo trabajo <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></p>
+      <p><a class="dabiz-service-link" href="{{ '/#collaboration' | relative_url }}">Cómo trabajo <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></p>
     </div></div>
   </section>
   <section class="full-page clearfix dabiz-service-outro"><div class="container-fluid text-center"><h2>¿Hablamos?</h2><p>Cuéntame tu necesidad para valorar una primera intervención.</p><a class="dabiz-service-cta" href="{{ '/#contact' | relative_url }}">Ir a contacto <i class="fa fa-long-arrow-right" aria-hidden="true"></i></a></div></section>
