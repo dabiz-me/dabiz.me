@@ -504,3 +504,38 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .dabiz-audience-more,.dabiz-services-index-link{margin-top:15px}
 .dabiz-audience-more a,.dabiz-services-index-link a{color:var(--brand-accent-dark);font-weight:600}
 @media(max-width:767px){.dabiz-detail-page .dabiz-service-hero{padding:42px 18px}.dabiz-detail-page .dabiz-service-details{padding:40px 10px}.dabiz-detail-page .dabiz-service-column{display:block;margin-bottom:17px}.dabiz-detail-page .dabiz-service-card{height:auto;padding:28px 19px}.dabiz-detail-page .dabiz-service-hero .about-content{padding:0}}
+
+
+/* V3.1 — Reuse Tfolio's Font Awesome and service-card visual language. */
+.dabiz-service-icon.services-box-logo{
+  width:64px;height:64px;min-width:64px;margin:0 auto 22px;
+  display:flex;align-items:center;justify-content:center;
+  border:1px solid var(--brand-border);border-radius:50%;
+  background:var(--brand-white);box-shadow:0 4px 14px rgba(23,43,58,.08);
+  float:none;position:static;
+}
+.dabiz-service-icon .fa{font-size:27px;line-height:1;color:var(--brand-accent-dark);}
+.dabiz-audiences .dabiz-audience-column{display:flex;}
+.dabiz-audiences .dabiz-audience-column .services-box{
+  display:flex;flex-direction:column;align-items:center;width:100%;
+}
+.dabiz-audiences .dabiz-audience-column .services-box a{margin-top:auto;}
+.dabiz-detail-page .dabiz-service-card .dabiz-service-icon{flex-shrink:0;}
+.dabiz-engineering-areas{background:var(--brand-surface);padding:clamp(45px,5vw,80px) clamp(15px,4vw,65px);}
+.dabiz-engineering-areas .services-wrapper{max-width:1320px;margin:auto;}
+.dabiz-engineering-intro{max-width:800px;margin:0 auto 36px;text-align:center;}
+.dabiz-engineering-grid{align-items:stretch;}
+.dabiz-engineering-column{display:flex;min-width:0;margin-bottom:26px;}
+.dabiz-engineering-card{display:block;width:100%;height:100%;padding:28px 30px;text-align:left;margin:0;}
+.dabiz-engineering-card .dabiz-service-icon{margin:0 0 22px;}
+.dabiz-engineering-card h3{font-size:clamp(19px,1.6vw,23px);line-height:1.35;margin:0 0 16px;}
+.dabiz-engineering-card p{font-size:15px;line-height:1.75;margin:0 0 14px;}
+.dabiz-engineering-card p:last-child{margin-bottom:0;}
+.dabiz-engineering-card a{color:var(--brand-accent-dark);font-weight:600;text-decoration:underline;text-underline-offset:3px;}
+.dabiz-engineering-card strong{color:var(--brand-navy);}
+@media(max-width:767px){
+  .dabiz-engineering-areas{padding:42px 12px;}
+  .dabiz-engineering-column{display:block;margin-bottom:18px;}
+  .dabiz-engineering-card{padding:24px 20px;height:auto;}
+  .dabiz-service-icon.services-box-logo{width:58px;height:58px;min-width:58px;}
+}
