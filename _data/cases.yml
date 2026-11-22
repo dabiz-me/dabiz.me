@@ -3,10 +3,10 @@
   detail: /casos/escape-room-ia/
   tags: Orientación tecnológica · IA · Genially · Experiencia práctica
 
-- title: Integraciones de terceros sin acoplar el negocio
-  summary: Arquitectura de adaptadores para incorporar o sustituir proveedores externos sin trasladar sus particularidades al núcleo de la aplicación.
+- title: Evolución arquitectónica e integración bancaria
+  summary: Cómo la experiencia con sistemas monolíticos orientó una separación entre servicios funcionales y microservicios ACL, en ambos sentidos de comunicación.
   detail: /casos/integraciones/
-  tags: APIs · Adaptadores · Webhooks
+  tags: Arquitectura · Microservicios · PSD2 · ACL
 
 - title: Identidad y autorización multitenant
   summary: Rediseño de la seguridad para unificar identidades y gestionar el contexto de negocio y los permisos de manera explícita.
