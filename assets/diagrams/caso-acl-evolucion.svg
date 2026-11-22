@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 980 270" role="img" aria-label="Experiencia con monolitos y criterio arquitectónico posterior">
+<defs><marker id="a" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0 0 L8 4 L0 8Z" fill="#237b8b"/></marker></defs>
+<rect width="980" height="270" rx="15" fill="#fff"/>
+<rect x="25" y="35" width="395" height="190" rx="14" fill="#f5f8fa" stroke="#bfd0d8" stroke-width="2"/>
+<text x="222" y="76" text-anchor="middle" font-family="Arial" font-size="21" font-weight="bold" fill="#17334a">Experiencia anterior</text>
+<text x="222" y="115" text-anchor="middle" font-family="Arial" font-size="17" fill="#17334a">Estructuras monolíticas</text>
+<text x="222" y="150" text-anchor="middle" font-family="Arial" font-size="14" fill="#4c6473">Negocio y conversaciones externas</text>
+<text x="222" y="173" text-anchor="middle" font-family="Arial" font-size="14" fill="#4c6473">comparten conocimiento específico</text>
+<path d="M425 130 H535" stroke="#237b8b" stroke-width="3" marker-end="url(#a)"/>
+<text x="480" y="112" font-family="Arial" font-size="13" text-anchor="middle" fill="#4c6473">Aprendizaje</text>
+<rect x="545" y="35" width="410" height="190" rx="14" fill="#e8f3f4" stroke="#237b8b" stroke-width="2"/>
+<text x="750" y="76" text-anchor="middle" font-family="Arial" font-size="21" font-weight="bold" fill="#17334a">Criterio de refactorización</text>
+<text x="750" y="117" text-anchor="middle" font-family="Arial" font-size="16" fill="#17334a">Servicios funcionales</text>
+<text x="750" y="145" text-anchor="middle" font-family="Arial" font-size="16" fill="#17334a">separados de microservicios ACL</text>
+<text x="750" y="184" text-anchor="middle" font-family="Arial" font-size="14" fill="#4c6473">Frontera explícita de integración</text>
+<text x="490" y="254" text-anchor="middle" font-family="Arial" font-size="13" fill="#4c6473">El esquema no presupone una migración directa de un monolito concreto.</text>
+</svg>
