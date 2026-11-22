@@ -1,51 +1,54 @@
 ---
 layout: editorial-case
-title: De una idea familiar a una experiencia interactiva con IA
-summary: Acompañamiento real para crear, probar y publicar un escape room accesible públicamente en una asignatura de máster.
+title: De una idea a una experiencia interactiva con IA
+summary: Un acompañamiento real para crear y publicar un escape room con Genially y Claude en Chrome en el contexto de una asignatura de máster.
 permalink: /casos/escape-room-ia/
 ---
 
-> **Sobre esta experiencia.** Acompañé a una persona que necesitaba crear un juego interactivo para una asignatura de su máster. El proyecto se realizó, se probó y funcionó. El relato se ha adaptado para explicar el valor de ese acompañamiento tecnológico; no fue un servicio contratado.
+> **Sobre esta experiencia.** Acompañé a una persona que debía preparar un juego interactivo para una asignatura de su máster. El juego se construyó, se probó y funcionó. Fue un acompañamiento real en un contexto académico, no un servicio comercial contratado.
 
 ## El punto de partida
 
-Una persona necesitaba crear un juego de pistas y acertijos, al estilo de un *escape room*, para una asignatura de su máster. El trabajo debía convertirse en una experiencia interactiva accesible desde distintos dispositivos y publicarse en Internet para que otras personas pudieran jugar mediante un enlace.
+Una persona necesitaba crear un juego de pistas y acertijos, al estilo de un *escape room*, para una asignatura de su máster. Además de diseñarlo, debía **publicarlo para que otras personas pudieran jugar mediante un enlace**, desde distintos dispositivos.
 
-El reto no era desarrollar software desde cero, sino encontrar una plataforma que permitiera diseñar el juego, configurar sus interacciones y compartirlo públicamente de forma sencilla. Mi intervención consistió en acompañarla en la selección de la herramienta, la creación de la experiencia y su publicación.
+El reto no era desarrollar software desde cero. Había que seleccionar una herramienta adecuada, organizar las pruebas, configurar las interacciones y conseguir que el resultado funcionara.
 
-## El reto
+## La elección de Genially
 
-El objetivo era convertir la idea en una experiencia interactiva personalizada, sin tener que aprender programación ni dedicar semanas a dominar una aplicación. La plataforma debía permitir crear las pruebas, configurar las interacciones y publicar el resultado con acceso público mediante un enlace.
+Un formulario con preguntas encadenadas habría servido, pero el resultado sería un cuestionario, no un *escape room*.
 
-## La herramienta: Genially
+Elegimos **Genially** por sus posibilidades para crear una experiencia visual e interactiva y compartirla en Internet. Esa decisión resolvía la parte de presentación y publicación, pero planteaba otro problema: el tiempo necesario para montar pantallas, objetos, pistas y enlaces entre elementos.
 
-Un formulario de preguntas encadenadas puede servir para un cuestionario, pero ofrece una experiencia distinta de un juego visual con objetos, pistas e interacciones.
+## El problema del montaje
 
-La elección de Genially respondió tanto a sus posibilidades para crear contenidos interactivos como a la necesidad de compartir públicamente el juego mediante un enlace. Esa flexibilidad también implicaba dedicar tiempo a diseñar pantallas, incorporar elementos y configurar las interacciones.
+Una vez diseñadas las pruebas, trasladarlas a Genially exigía repetir operaciones de configuración. Analizamos distintas vías para evitar que la persona tuviera que realizar todo ese trabajo manualmente:
 
-## Encontrar una solución proporcionada
+- **API de la aplicación.** Se descartó porque no disponíamos de acceso a esa vía de integración con la cuenta gratuita utilizada.
+- **Cookies o tokens de sesión.** Se descartó recurrir a una automatización que gestionase manualmente esos datos: podían caducar y suponían riesgos de seguridad.
+- **Playwright.** Permitía automatizar el navegador, pero introducir programación y mantenimiento era excesivo para una actividad puntual y para el nivel técnico de la persona.
 
-Una vez diseñado el juego, montar cada pantalla puede convertirse en una sucesión de operaciones repetitivas. Antes de automatizarlas, conviene comparar tres posibilidades:
+La solución elegida fue **Claude en Chrome**. En lugar de desarrollar una integración, utilizamos un asistente de IA capaz de operar sobre el navegador con una sesión ya iniciada y autorizada, para ayudar con las tareas repetitivas de montaje.
 
-- **Hacerlo manualmente.** Es la opción más directa, aunque puede llevar bastante tiempo.
-- **Desarrollar una automatización específica.** Puede ser útil si el trabajo se repite, pero exige preparación, mantenimiento y comprobar las opciones de integración disponibles.
-- **Utilizar un asistente de IA en el navegador.** Herramientas como Claude en Chrome permiten explorar la ejecución asistida de operaciones sobre una sesión autorizada, con permisos y supervisión adecuados. Su viabilidad depende de las capacidades y restricciones de la aplicación.
+La decisión no consistió en buscar la tecnología más sofisticada, sino la que permitía avanzar sin trasladar a la persona una complejidad técnica innecesaria.
 
-Para una actividad puntual, construir una integración completa puede ser desproporcionado. El criterio no es utilizar la tecnología más sofisticada, sino encontrar la solución que aporte más valor con el esfuerzo y el riesgo adecuados.
+## El acompañamiento realizado
 
-## El proceso de acompañamiento
+1. **Definir la experiencia.** Aclaramos el objetivo del trabajo y la estructura del juego.
+2. **Seleccionar la plataforma.** Elegimos Genially teniendo en cuenta la interactividad y la publicación del resultado.
+3. **Preparar las pruebas.** Utilizamos IA como apoyo para estructurar y elaborar el contenido.
+4. **Resolver la configuración.** Evaluamos alternativas de automatización y utilizamos Claude en Chrome como apoyo al montaje en el navegador.
+5. **Probar el resultado.** Comprobamos el funcionamiento del juego y su disponibilidad para los participantes.
 
-1. **Aclarar la idea.** Participantes, duración, dificultad y tipo de experiencia.
-2. **Elegir la herramienta.** Comparar opciones según el resultado esperado, el presupuesto y el esfuerzo.
-3. **Diseñar las pruebas.** Utilizar IA como apoyo para estructurar la historia, ordenar acertijos y redactar pistas.
-4. **Preparar el montaje.** Decidir qué tareas conviene hacer manualmente y cuáles se podrían automatizar de forma segura.
-5. **Probar y publicar.** Comprobar las interacciones y el funcionamiento en los dispositivos previstos, y dejar el juego accesible públicamente mediante un enlace.
+## El resultado
+
+**Se creó un escape room funcional con Genially, se probó y se publicó para su acceso mediante un enlace.** La intervención combinó decisiones sobre la plataforma, elaboración del contenido y ayuda de IA en las tareas de configuración.
+
+No se incluyen cifras de pruebas, horas invertidas ni un reparto detallado de tareas entre la persona y el asistente porque todavía no están documentados aquí.
 
 ## ¿Qué aporta el acompañamiento tecnológico?
 
-No se trata solo de recomendar una aplicación o explicar dónde hacer clic. Se trata de entender qué quieres conseguir, valorar alternativas, evitar complejidades innecesarias y ayudarte a poner en práctica una solución que puedas utilizar.
+La ayuda no consistió simplemente en recomendar una aplicación. Consistió en comprender el objetivo, comparar alternativas, descartar caminos desproporcionados y acompañar a una persona hasta conseguir una experiencia que funcionara.
 
-## Más allá de un juego familiar
+## Más allá de un escape room
 
-El mismo enfoque puede servir para crear materiales formativos, preparar presentaciones interactivas, organizar información o simplificar tareas repetitivas en aplicaciones de uso cotidiano.
-
+El mismo criterio sirve para preparar materiales formativos, presentaciones interactivas o actividades digitales: aprovechar las herramientas existentes y utilizar la IA cuando simplifica el trabajo, sin convertir una necesidad puntual en un proyecto de desarrollo a medida.
