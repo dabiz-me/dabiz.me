@@ -1,13 +1,11 @@
 ---
-layout: case
-title: De una idea familiar a una experiencia interactiva con ayuda de la IA
+layout: editorial-case
+title: De una idea familiar a una experiencia interactiva con IA
 summary: Cómo acompañar a una persona para transformar una idea en un juego interactivo sin desarrollar software a medida.
 permalink: /casos/escape-room-ia/
 ---
 
-*Orientación y acompañamiento tecnológico · Ejemplo práctico ilustrativo*
-
-> Este ejemplo parte de una necesidad cotidiana explorada con Genially. Describe un enfoque de acompañamiento y posibles decisiones técnicas; no se presenta como un encargo profesional completado ni atribuye resultados que no se hayan verificado.
+> Ejemplo ilustrativo: muestra un posible enfoque de acompañamiento, no un encargo profesional completado ni resultados verificados.
 
 ## El punto de partida
 
@@ -49,12 +47,7 @@ Para una actividad puntual, construir una integración completa puede ser despro
 
 No se trata solo de recomendar una aplicación o explicar dónde hacer clic. Se trata de entender qué quieres conseguir, valorar alternativas, evitar complejidades innecesarias y ayudarte a poner en práctica una solución que puedas utilizar.
 
-Este ejemplo no incluye métricas de tiempo ahorrado ni un resultado final atribuido a un cliente: esas evidencias requerirían completar y documentar la experiencia.
-
 ## Más allá de un juego familiar
 
 El mismo enfoque puede servir para crear materiales formativos, preparar presentaciones interactivas, organizar información o simplificar tareas repetitivas en aplicaciones de uso cotidiano.
 
-**No tienes que saber qué aplicación utilizar, cómo conectarla ni qué puede hacer la inteligencia artificial por ti.** Podemos ayudarte a encontrar una solución proporcionada a lo que necesitas.
-
-[Conoce el servicio de orientación y acompañamiento tecnológico](/ia-y-tecnologia/)

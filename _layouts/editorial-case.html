@@ -1,0 +1,26 @@
+---
+layout: default
+---
+<main class="themeix-main-content dabiz-editorial-case">
+  <section class="dabiz-editorial-hero" aria-labelledby="case-title">
+    <div class="dabiz-editorial-container">
+      <a class="dabiz-editorial-back" href="{{ '/#portfolio' | relative_url }}">&larr; Volver a casos y ejemplos</a>
+      <p class="dabiz-editorial-eyebrow">Orientación y acompañamiento tecnológico <span aria-hidden="true">·</span> Ejemplo ilustrativo</p>
+      <h1 id="case-title">{{ page.title }}</h1>
+      <p class="dabiz-editorial-summary">{{ page.summary }}</p>
+    </div>
+  </section>
+  <section class="dabiz-editorial-body" aria-label="Descripción del ejemplo">
+    <div class="dabiz-editorial-container">
+      <article class="dabiz-editorial-prose">
+        {{ content }}
+      </article>
+      <aside class="dabiz-editorial-cta" aria-labelledby="case-cta-title">
+        <h2 id="case-cta-title">¿Tienes una idea y no sabes cómo llevarla a cabo?</h2>
+        <p>Podemos valorar juntos las herramientas y encontrar una forma práctica de avanzar, adaptada a tus necesidades y conocimientos.</p>
+        <a href="{{ '/ia-y-tecnologia/' | relative_url }}">Conocer el servicio de orientación tecnológica <span aria-hidden="true">&rarr;</span></a>
+      </aside>
+    </div>
+  </section>
+  {% include footer.html %}
+</main>
