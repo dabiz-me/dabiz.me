@@ -1,7 +1,7 @@
 - title: De una idea familiar a una experiencia interactiva con IA
-  summary: Ejemplo ilustrativo de acompañamiento tecnológico para crear un escape room con Genially, sin desarrollar software a medida.
+  summary: Acompañamiento real para crear un juego interactivo con Genially e IA en una asignatura de máster.
   detail: /casos/escape-room-ia/
-  tags: Orientación tecnológica · IA · Genially · Ejemplo ilustrativo
+  tags: Orientación tecnológica · IA · Genially · Experiencia práctica
 
 - title: Integraciones de terceros sin acoplar el negocio
   summary: Arquitectura de adaptadores para incorporar o sustituir proveedores externos sin trasladar sus particularidades al núcleo de la aplicación.
