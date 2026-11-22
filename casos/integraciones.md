@@ -11,9 +11,9 @@ En estructuras monolíticas anteriores, los componentes responsables de ejecutar
 
 Al abordar el refactor de la arquitectura, esa experiencia sirvió para orientar una decisión: separar el procesamiento funcional de la comunicación específica con proveedores externos. **No se trata de aplicar un patrón por sí mismo, sino de evitar reproducir un acoplamiento conocido en la nueva arquitectura.**
 
-<figure class="dabiz-acl-figure">
-  <img src="{{ '/assets/diagrams/caso-acl-evolucion.svg' | relative_url }}" alt="Evolución del criterio: experiencia con componentes monolíticos acoplados a conversaciones externas y posterior separación entre servicios funcionales y ACL." loading="lazy" width="980" height="270">
-  <figcaption>La experiencia previa fundamentó la separación. El diagrama no implica una migración literal de un monolito concreto.</figcaption>
+<figure class="dabiz-acl-figure" style="margin: 1.75rem 0; padding: 0;">
+  <img src="{{ '/assets/diagrams/caso-acl-evolucion.svg' | relative_url }}" alt="Evolución del criterio: experiencia con componentes monolíticos acoplados a conversaciones externas y posterior separación entre servicios funcionales y ACL." loading="lazy" style="display:block; max-width:100%; width:100%; height:auto;" width="980" height="270">
+  <figcaption style="font-size:0.875rem;line-height:1.5;color:#526875;margin-top:0.5rem;">La experiencia previa fundamentó la separación. El diagrama no implica una migración literal de un monolito concreto.</figcaption>
 </figure>
 
 ## La solución: ACL como microservicio
@@ -32,9 +32,9 @@ Cada ACL encapsula el conocimiento del contrato externo y se comunica con sus se
 
 Una operación funcional requiere comunicarse con una entidad. El servicio responsable se relaciona con la ACL correspondiente; esta adapta la petición al contrato externo y canaliza la comunicación. La respuesta vuelve a través de la misma frontera para que el servicio funcional continúe su proceso.
 
-<figure class="dabiz-acl-figure">
-  <img src="{{ '/assets/diagrams/caso-acl-salida.svg' | relative_url }}" alt="Comunicación saliente: PIS, AIS o Token solicitan una operación al microservicio ACL, este comunica con el banco y devuelve la respuesta." loading="lazy" width="980" height="265">
-  <figcaption>Salida y respuesta síncrona. Una respuesta inmediata del banco no implica necesariamente que el proceso funcional haya finalizado.</figcaption>
+<figure class="dabiz-acl-figure" style="margin: 1.75rem 0; padding: 0;">
+  <img src="{{ '/assets/diagrams/caso-acl-salida.svg' | relative_url }}" alt="Comunicación saliente: PIS, AIS o Token solicitan una operación al microservicio ACL, este comunica con el banco y devuelve la respuesta." loading="lazy" style="display:block; max-width:100%; width:100%; height:auto;" width="980" height="265">
+  <figcaption style="font-size:0.875rem;line-height:1.5;color:#526875;margin-top:0.5rem;">Salida y respuesta síncrona. Una respuesta inmediata del banco no implica necesariamente que el proceso funcional haya finalizado.</figcaption>
 </figure>
 
 **La ACL no decide el resultado de negocio.** Traduce las particularidades de comunicación sin atribuir a la entidad estados o confirmaciones que todavía no ha comunicado.
@@ -45,9 +45,9 @@ El otro lado es igual de importante. Algunas comunicaciones se originan en la en
 
 En lugar de obligar a PIS, AIS o Token a exponer y comprender los mecanismos propios de cada proveedor, la ACL recibe estas entradas, aplica el tratamiento que exige el contrato externo y comunica la información pertinente al servicio par.
 
-<figure class="dabiz-acl-figure">
-  <img src="{{ '/assets/diagrams/caso-acl-entrada.svg' | relative_url }}" alt="Comunicación entrante: el banco emite un callback o retorno, la ACL lo recibe y traduce, y comunica el resultado al servicio funcional correspondiente." loading="lazy" width="980" height="265">
-  <figcaption>Entrada externa por la ACL. La correlación, el protocolo interno y los mecanismos de entrega concretos dependen de la implementación.</figcaption>
+<figure class="dabiz-acl-figure" style="margin: 1.75rem 0; padding: 0;">
+  <img src="{{ '/assets/diagrams/caso-acl-entrada.svg' | relative_url }}" alt="Comunicación entrante: el banco emite un callback o retorno, la ACL lo recibe y traduce, y comunica el resultado al servicio funcional correspondiente." loading="lazy" style="display:block; max-width:100%; width:100%; height:auto;" width="980" height="265">
+  <figcaption style="font-size:0.875rem;line-height:1.5;color:#526875;margin-top:0.5rem;">Entrada externa por la ACL. La correlación, el protocolo interno y los mecanismos de entrega concretos dependen de la implementación.</figcaption>
 </figure>
 
 El servicio funcional conserva la responsabilidad de sus transiciones de negocio. En particular, un retorno de navegador o callback no debe interpretarse automáticamente como prueba de ejecución definitiva de un pago.
