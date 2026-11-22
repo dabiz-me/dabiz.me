@@ -1,7 +1,7 @@
 ---
 layout: editorial-case
 title: De una idea familiar a una experiencia interactiva con IA
-summary: Acompañamiento real para crear y probar un juego interactivo con Genially e IA en el contexto de una asignatura de máster.
+summary: Acompañamiento real para crear, probar y publicar un escape room accesible públicamente en una asignatura de máster.
 permalink: /casos/escape-room-ia/
 ---
 
@@ -9,19 +9,19 @@ permalink: /casos/escape-room-ia/
 
 ## El punto de partida
 
-Una persona necesitaba crear un juego de pistas y acertijos, al estilo de un *escape room*, para una asignatura de su máster. La propuesta tomaba la forma de una experiencia interactiva que pudiera utilizarse desde distintos dispositivos.
+Una persona necesitaba crear un juego de pistas y acertijos, al estilo de un *escape room*, para una asignatura de su máster. El trabajo debía convertirse en una experiencia interactiva accesible desde distintos dispositivos y publicarse en Internet para que otras personas pudieran jugar mediante un enlace.
 
-El reto no era programar una aplicación desde cero, sino elegir las herramientas, estructurar las pruebas y llevar la idea a una experiencia funcional. Mi intervención consistió en acompañarla en ese proceso.
+El reto no era desarrollar software desde cero, sino encontrar una plataforma que permitiera diseñar el juego, configurar sus interacciones y compartirlo públicamente de forma sencilla. Mi intervención consistió en acompañarla en la selección de la herramienta, la creación de la experiencia y su publicación.
 
 ## El reto
 
-El objetivo es convertir la idea en una experiencia interactiva personalizada, sin aprender programación ni dedicar semanas a dominar una aplicación: elegir una herramienta adecuada, estructurar las pruebas, preparar los contenidos y simplificar la configuración.
+El objetivo era convertir la idea en una experiencia interactiva personalizada, sin tener que aprender programación ni dedicar semanas a dominar una aplicación. La plataforma debía permitir crear las pruebas, configurar las interacciones y publicar el resultado con acceso público mediante un enlace.
 
 ## La herramienta: Genially
 
 Un formulario de preguntas encadenadas puede servir para un cuestionario, pero ofrece una experiencia distinta de un juego visual con objetos, pistas e interacciones.
 
-Genially permite crear contenidos interactivos más elaborados. Esa flexibilidad también implica dedicar tiempo a diseñar pantallas, incorporar elementos y configurar las interacciones.
+La elección de Genially respondió tanto a sus posibilidades para crear contenidos interactivos como a la necesidad de compartir públicamente el juego mediante un enlace. Esa flexibilidad también implicaba dedicar tiempo a diseñar pantallas, incorporar elementos y configurar las interacciones.
 
 ## Encontrar una solución proporcionada
 
@@ -39,7 +39,7 @@ Para una actividad puntual, construir una integración completa puede ser despro
 2. **Elegir la herramienta.** Comparar opciones según el resultado esperado, el presupuesto y el esfuerzo.
 3. **Diseñar las pruebas.** Utilizar IA como apoyo para estructurar la historia, ordenar acertijos y redactar pistas.
 4. **Preparar el montaje.** Decidir qué tareas conviene hacer manualmente y cuáles se podrían automatizar de forma segura.
-5. **Probar antes de compartir.** Revisar enlaces, interacciones, dificultad y funcionamiento en los dispositivos previstos.
+5. **Probar y publicar.** Comprobar las interacciones y el funcionamiento en los dispositivos previstos, y dejar el juego accesible públicamente mediante un enlace.
 
 ## ¿Qué aporta el acompañamiento tecnológico?
 
