@@ -1,19 +1,17 @@
 ---
 layout: editorial-case
 title: De una idea familiar a una experiencia interactiva con IA
-summary: Cómo acompañar a una persona para transformar una idea en un juego interactivo sin desarrollar software a medida.
+summary: Acompañamiento real para crear y probar un juego interactivo con Genially e IA en el contexto de una asignatura de máster.
 permalink: /casos/escape-room-ia/
 ---
 
-> **Sobre este caso.** El proyecto se desarrolló y probó con éxito como parte de una práctica de máster. El relato se ha adaptado para mostrar cómo la experiencia puede aplicarse al acompañamiento tecnológico; no se presenta como un encargo realizado para un cliente.
+> **Sobre esta experiencia.** Acompañé a una persona que necesitaba crear un juego interactivo para una asignatura de su máster. El proyecto se realizó, se probó y funcionó. El relato se ha adaptado para explicar el valor de ese acompañamiento tecnológico; no fue un servicio contratado.
 
 ## El punto de partida
 
-Imagina que quieres preparar una sorpresa para tu familia: un juego de pistas y acertijos, al estilo de un *escape room*, que puedan disfrutar desde el móvil o el ordenador.
+Una persona necesitaba crear un juego de pistas y acertijos, al estilo de un *escape room*, para una asignatura de su máster. La propuesta tomaba la forma de una experiencia interactiva que pudiera utilizarse desde distintos dispositivos.
 
-Tienes la idea, pero aparecen las dudas: ¿qué aplicación elegir?, ¿cómo organizar las pruebas?, ¿cuánto tiempo llevará configurarlo?, ¿puede ayudarte la inteligencia artificial?
-
-No necesitas contratar un desarrollo de software a medida. Necesitas orientación para aprovechar las herramientas que ya existen.
+El reto no era programar una aplicación desde cero, sino elegir las herramientas, estructurar las pruebas y llevar la idea a una experiencia funcional. Mi intervención consistió en acompañarla en ese proceso.
 
 ## El reto
 
@@ -35,7 +33,7 @@ Una vez diseñado el juego, montar cada pantalla puede convertirse en una sucesi
 
 Para una actividad puntual, construir una integración completa puede ser desproporcionado. El criterio no es utilizar la tecnología más sofisticada, sino encontrar la solución que aporte más valor con el esfuerzo y el riesgo adecuados.
 
-## Cómo sería el acompañamiento
+## El proceso de acompañamiento
 
 1. **Aclarar la idea.** Participantes, duración, dificultad y tipo de experiencia.
 2. **Elegir la herramienta.** Comparar opciones según el resultado esperado, el presupuesto y el esfuerzo.
