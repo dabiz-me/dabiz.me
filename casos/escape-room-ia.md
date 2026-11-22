@@ -5,7 +5,7 @@ summary: Cómo acompañar a una persona para transformar una idea en un juego in
 permalink: /casos/escape-room-ia/
 ---
 
-> Ejemplo ilustrativo: muestra un posible enfoque de acompañamiento, no un encargo profesional completado ni resultados verificados.
+> **Sobre este caso.** El proyecto se desarrolló y probó con éxito como parte de una práctica de máster. El relato se ha adaptado para mostrar cómo la experiencia puede aplicarse al acompañamiento tecnológico; no se presenta como un encargo realizado para un cliente.
 
 ## El punto de partida
 
