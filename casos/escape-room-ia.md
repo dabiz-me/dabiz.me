@@ -57,4 +57,4 @@ El mismo enfoque puede servir para crear materiales formativos, preparar present
 
 **No tienes que saber qué aplicación utilizar, cómo conectarla ni qué puede hacer la inteligencia artificial por ti.** Podemos ayudarte a encontrar una solución proporcionada a lo que necesitas.
 
-[Conoce el servicio de orientación y acompañamiento tecnológico](/#audiences)
+[Conoce el servicio de orientación y acompañamiento tecnológico](/ia-y-tecnologia/)
